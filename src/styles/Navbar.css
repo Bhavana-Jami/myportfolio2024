@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Moirai+One&display=swap");
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-accent: #ffd9d9;
+  --color-secondary: #5928e5;
+}
+#navbar {
+  height: 10vh;
+  /* position: fixed; */
+}
+.navbar-toggle-icon span {
+  border: none;
+  color: white !important;
+}
+.navbar {
+  --bs-navbar-toggler-border-color: 0 !important;
+  --bs-navbar-toggler-border-radius: 0 !important;
+  --bs-navbar-toggler-focus-width: 0 !important;
+}
+.navbar-brand{
+  font-family: 'Moirai One', system-ui;
+  font-size: 1.6em;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  /* line-height: 1.9; */
+  font-weight:600;
+  color: var(--color-secondary) !important;
+}

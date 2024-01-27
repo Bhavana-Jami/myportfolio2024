@@ -1,0 +1,36 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-accent: #ffd9d9;
+  --color-secondary: #5928e5;
+}
+#home {
+  height: 100vh !important;
+  width: 50% !important;
+/* margin-left: 17% !important; */
+  /* background-color: black; */
+}
+#hi{
+ 
+  color: var(--color-secondary) !important;
+  /* display: inline-block !important;
+text-align: left !important; */
+
+}
+#name {
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+    text-align: left !important;
+  /* padding: 0% !important; */
+  /* margin: 0% !important; */
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: bolder;
+  /* font-weight: bolder; */
+}
+#tagline {
+  /* padding: 0% !important; */
+  /* margin: 0 !important; */
+  font-size: 3em;
+  text-align: left !important;
+  font-weight: 300;
+}
