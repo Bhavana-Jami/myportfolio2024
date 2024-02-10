@@ -20,7 +20,7 @@ function App() {
   return (
     <Container id="app" fluid>
       <Navigation
-        expand="md"
+        expand="sm"
         homeRef={homeRef}
         aboutRef={aboutRef}
         skillsRef={skillsRef}

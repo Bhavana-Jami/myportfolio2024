@@ -15,6 +15,9 @@
   border: none;
   color: white !important;
 }
+.navbar-toggler{
+  color: white !important;
+}
 .navbar {
   --bs-navbar-toggler-border-color: 0 !important;
   --bs-navbar-toggler-border-radius: 0 !important;
