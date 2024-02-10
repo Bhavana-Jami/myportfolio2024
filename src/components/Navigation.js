@@ -23,7 +23,7 @@ function Navigation({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
       id="navbar"
     >
       <Container fluid>
-        <Navbar.Brand onClick={() => scrollIntoView(homeRef)} className="ms-5 ps-5">
+        <Navbar.Brand onClick={() => scrollIntoView(homeRef)} className="ms-5">
           JB
         </Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}>
@@ -40,7 +40,7 @@ function Navigation({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 ms-4 me-5 gap-3">
+            <Nav className="justify-content-end flex-grow-1 gap-4 pe-5">
               <Nav.Link onClick={() => scrollIntoView(homeRef)}>Home</Nav.Link>
               <Nav.Link onClick={() => scrollIntoView(aboutRef)}>
                 About
@@ -52,6 +52,9 @@ function Navigation({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
                 Projects
               </Nav.Link>
               <Nav.Link>Resume</Nav.Link>
+            </Nav>
+            <Nav>
+              
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

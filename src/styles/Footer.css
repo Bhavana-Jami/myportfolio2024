@@ -1,0 +1,53 @@
+:root {
+  --color-secondary: #5928e5;
+}
+
+.footer {
+  min-height: 25vh !important;
+  width: 100% !important;
+  max-width: none !important;
+  background: var(--color-secondary);
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* these 2 lines makes the scroll snap to show the footer */
+  scroll-snap-stop: always;
+  scroll-snap-align: end;
+  padding: 1% !important;
+  gap: 0.8rem;
+}
+.sm-icon-container {
+  width: 100%;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  /* gap: 1%; */
+  /* background-color: antiquewhite; */
+  /* padding-bottom: 2%; */
+}
+.sm-icon {
+  
+  background-color: #6937f1;
+  
+  font-size: clamp(1.2rem, 2.2vw, 2.2rem);
+  /* padding: 0.2rem 0.8rem; */
+  margin: 0.8%;
+  cursor: pointer;
+}
+.sm-icon a{
+  color: black !important;
+  text-decoration: none !important;
+}
+.move-up-rocket{
+  color: black !important;
+  font-size: clamp(1.2rem, 3vw, 2.2rem);
+  cursor: pointer;
+
+
+}
+.copyright{
+  font-size: clamp(0.5rem, 0.9vw, 0.7rem);
+
+}

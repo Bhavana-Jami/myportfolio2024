@@ -1,4 +1,4 @@
-import { React, forwardRef } from "react";
+import React, {forwardRef } from "react";
 import "../styles/Home.css";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -8,7 +8,12 @@ const Home = forwardRef((props, ref) => {
       <Row id="hi" >Hi, my name is</Row>
       <Row id="name" >Bhavana Jami.</Row>
       <Row id="tagline">I love to create, develop.</Row>
-      <Row id="knowmore">Know More..</Row>
+      <Row id="description">I am currently working in TCS as Associate Software Developer,working in TCS as Associate Software Developer  </Row>
+      <Row >
+      <Col className="knowmore">Know More..</Col>
+      <Col className="knowmore">Know More..</Col>
+      </Row>
+
     </Container>
   );
 });

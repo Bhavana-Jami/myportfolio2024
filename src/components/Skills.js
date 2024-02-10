@@ -1,4 +1,4 @@
-import { React, forwardRef } from "react";
+import React,{  forwardRef } from "react";
 import "../styles/Skills.css";
 import { Container, Row, Col } from "react-bootstrap";
 

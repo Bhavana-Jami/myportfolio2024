@@ -4,6 +4,8 @@
   --color-black: #000;
   --color-accent: #ffd9d9;
   --color-secondary: #5928e5;
+  --slate: #8892b0;
+  --light-slate: #ccd6f6;
 }
 #navbar {
   height: 10vh;
@@ -26,4 +28,10 @@
   /* line-height: 1.9; */
   font-weight:600;
   color: var(--color-secondary) !important;
+}
+.navbar a{
+  font-size: clamp(13px, 3.5vw, 18px);
+
+  /* font-weight: bold !important; */
+  color: var(--light-slate) !important;
 }

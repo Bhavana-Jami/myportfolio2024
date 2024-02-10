@@ -1,5 +1,5 @@
 import "../styles/About.css";
-import { React, forwardRef } from "react";
+import  React, {forwardRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 const About = forwardRef((props, ref) => {

@@ -12,23 +12,32 @@
   font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   font-family: "Montserrat", sans-serif;
-  color: var(--color-white) !important;
-  background-color: var(--color-black);
+ 
+
 }
-/* .container {
+.container {
   --bs-gutter-x: 0 !important;
   --bs-gutter-y: 0 !important;
-  margin: 0 !important;
-} */
+}
+.container-fluid{
+  --bs-gutter-x: 1.5rem !important;
+  margin: 0% !important;
+  padding: 0 !important;
+}
 #app {
   scroll-behavior: smooth;
   height: 100vh;
   scroll-snap-type: y mandatory;
+  background-color: var(--color-black);
+  color: var(--color-white) !important;
+  
+/* scroll-snap-stop: normal !important; */
   overflow-y: scroll;
 }
 .section {
-  height: 100vh !important;
+  min-height: 100vh !important;
   scroll-snap-align: start;
+ 
 }
 
 /* width */
