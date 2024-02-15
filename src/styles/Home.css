@@ -15,14 +15,16 @@
 }
 #hi {
   color: var(--color-secondary) !important;
-  font-size: clamp(10px, 2vw, 15px);
+  /* font-size: clamp(10px, 2vw, 15px); */
   letter-spacing: 0.8px;
 }
 #name {
   font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   text-align: left !important;
-  font-size: clamp(40px, 8vw, 80px);
+  /* font-size: clamp(8rem, 9vw, 10rem) !important; */
+
+  font-size: 7rem;
   font-weight: bolder;
   color: var(--light-slate) !important;
 }
