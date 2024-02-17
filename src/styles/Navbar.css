@@ -9,7 +9,9 @@
 }
 #navbar {
   height: 10vh;
-  /* position: fixed; */
+  position: sticky;
+  scroll-snap-stop: always !important;
+  scroll-snap-align: start !important;
 }
 .navbar-toggle-icon span {
   border: none;
@@ -28,13 +30,12 @@
   font-size: 1.6em;
   letter-spacing: 1.2px;
   cursor: pointer;
-  /* line-height: 1.9; */
+
   font-weight:600;
   color: var(--color-secondary) !important;
 }
 .navbar a{
   font-size: clamp(13px, 3.5vw, 18px);
 
-  /* font-weight: bold !important; */
   color: var(--light-slate) !important;
 }

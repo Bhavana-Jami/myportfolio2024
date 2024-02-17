@@ -31,7 +31,7 @@
   background-color: var(--color-black);
   color: var(--color-white) !important;
   
-/* scroll-snap-stop: normal !important; */
+
   overflow-y: scroll;
 }
 .section {
