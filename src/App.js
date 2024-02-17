@@ -1,6 +1,6 @@
 import "./styles/App.css";
 import React, { useRef } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Home from "./components/Home";
