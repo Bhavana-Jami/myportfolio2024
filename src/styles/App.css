@@ -35,8 +35,12 @@
   overflow-y: scroll;
 }
 .section {
-  min-height: 100vh !important;
+  min-height: 100vh ;
   scroll-snap-align: start;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
  
 }
 

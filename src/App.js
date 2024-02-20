@@ -25,20 +25,6 @@ function App() {
 
   return (
     <Container id="app" fluid>
-
-
-{/* <Router>
-  <Header/>
-  <Routes>
-    <Route path="/" element={<SignIn/>}></Route>
-    <Route path="/signup" element={<SignUp/>}></Route>
-  </Routes>
-  <Footer/>
-</Router> */}
-
-
-
-
       <Header
         expand="md"
         homeRef={homeRef}
@@ -50,8 +36,7 @@ function App() {
       <About ref={aboutRef} />
       <Skills ref={skillsRef} />
       <Projects ref={projectsRef} />
-      <Footer homeRef={homeRef} /> 
-{/* <Fuck/> */}
+      <Footer homeRef={homeRef} />
     </Container>
   );
 }

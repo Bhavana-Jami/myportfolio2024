@@ -7,10 +7,11 @@
   --light-slate: #ccd6f6;
 }
 #home {
-  /* height: 100vh !important;
-  width: 100% !important; */
+  height: 90vh !important;
+  width: 100% !important;
+  
 
-  margin-top: -5% !important;
+  /* margin-top: -9% !important; */
   padding: 5.5% !important;
 }
 #hi {
