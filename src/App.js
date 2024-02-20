@@ -10,7 +10,7 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Search from "./components/Search";
 import Header from "./components/Header";
-import Fuck from "./components/Fuck";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";

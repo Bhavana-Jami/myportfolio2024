@@ -9,6 +9,7 @@ import {
   Button,
   Navbar,
 } from "react-bootstrap";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
   const scrollIntoView = (elementRef) => {
@@ -73,7 +74,7 @@ function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
       <Navbar
         key={expand}
         expand={expand}
-        className="mb-3 pt-4"
+        className="pt-4"
         fixed="top"
         id="navbar"
       >
@@ -82,7 +83,7 @@ function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
             JB
           </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}>
-            <span>&#9776;</span>
+          <RxHamburgerMenu />
           </Navbar.Toggle>
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${expand}`}
@@ -90,13 +91,14 @@ function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
             placement="end"
           >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title className="ms-4" id={`offcanvasNavbarLabel-expand-${expand}`}>
+             
+              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                 JB
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link onClick={() => scrollIntoView(homeRef)}>Home</Nav.Link>
+              <Nav className="justify-content-end flex-grow-1 pe-5 gap-3">
+                
                 <Nav.Link onClick={() => scrollIntoView(aboutRef)}>
                   About
                 </Nav.Link>
@@ -107,6 +109,7 @@ function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
                   Projects
                 </Nav.Link>
                 <Nav.Link>Resume</Nav.Link>
+                <Nav.Link onClick={() => scrollIntoView(homeRef)}>Contact</Nav.Link>
               </Nav>
 
             </Offcanvas.Body>
