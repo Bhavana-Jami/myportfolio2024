@@ -69,7 +69,7 @@ const [show, setShow] = useState()
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-4 gap-2">
+            <Nav className="justify-content-end flex-grow-1 pe-2 gap-2">
               <Nav.Link  >
                 About
               </Nav.Link>

@@ -10,10 +10,12 @@
   max-width: 100% !important;
 }
 #home {
-  /* height: 90vh !important; */
+  height: 90vh !important;
   width: 100% !important;
-  margin-top: 2% !important;
-  /* padding: 5.5% !important; */
+  /* margin-top: 5% !important; */
+  padding-top: 5.5% !important;
+  padding-left: 5% !important;
+  padding-right: 5% !important;
 }
 #hi {
   color: var(--color-secondary) !important;
