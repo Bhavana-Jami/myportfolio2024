@@ -1,0 +1,17 @@
+.skill-icon{
+    font-size: clamp(2.8rem, 1.0667rem + 9.2444vw, 8rem);
+    cursor: pointer;
+    transition: 0.8s ease-in-out ;
+
+}
+.skill-icon:hover{
+    color: black;
+    transform:scale(1.1)
+}
+#skills-container{
+    background-color: #5928e5;
+    
+  /* background-color: rgba(89, 40, 229, 0.58) !important; */
+
+    /* opacity: 0; */
+}

@@ -12,35 +12,9 @@ import {
 import { RxHamburgerMenu } from "react-icons/rx";
 
 function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
-  // const offCanvasRef = useRef();
-  const scrollIntoView = () => {
 
-  }
-  // console.log(offCanvasRef);
-  // const handleClick = () => {
-  // elementRef.current.scrollIntoView({ behavior: "smooth" });
-  // if (offCanvasRef.current && offCanvasRef.current.backdrop) {
-  //   offCanvasRef.current.backdrop.click();
-  // } else {
-  //   console.error("offCanvasRef or backdrop is undefined.");
-  // }
-
-  // };
-const [show, setShow] = useState()
-  const handleClose = () => {
-    setShow(false)
-
-  }
-  const offCanvasRef = useRef(null);
-  const handleClick = () => {
-
-    if (offCanvasRef.current) {
-      // offCanvasRef.current.backdrop.click();
-      console.log(offCanvasRef.current);
-    } else {
-      console.error("offCanvasRef or backdrop is undefined.");
-
-    }
+  const scrollIntoView = (elementRef) => {
+    elementRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
@@ -48,11 +22,11 @@ const [show, setShow] = useState()
       key={expand}
       expand={expand}
       className="pt-4"
-      fixed="top"
+      // fixed="top"
       id="navbar"
     >
       <Container fluid>
-        <Navbar.Brand onClick={() => scrollIntoView(homeRef)} className="ms-5">
+        <Navbar.Brand onClick={() => scrollIntoView(homeRef)} className="ms-4">
           JB
         </Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}>
@@ -70,7 +44,7 @@ const [show, setShow] = useState()
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-2 gap-2">
-              <Nav.Link  >
+              <Nav.Link onClick={() => scrollIntoView(skillsRef)}>
                 About
               </Nav.Link>
               <Nav.Link onClick={() => scrollIntoView(skillsRef)}>

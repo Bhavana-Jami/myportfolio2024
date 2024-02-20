@@ -13,9 +13,13 @@
   height: 90vh !important;
   width: 100% !important;
   /* margin-top: 5% !important; */
-  padding-top: 5.5% !important;
+  padding-top: 0% !important;
   padding-left: 5% !important;
   padding-right: 5% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
 }
 #hi {
   color: var(--color-secondary) !important;

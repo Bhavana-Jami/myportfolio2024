@@ -37,10 +37,10 @@
 .section {
   min-height: 100vh ;
   scroll-snap-align: start;
-  display: flex !important;
+  /* display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  flex-direction: column !important;
+  flex-direction: column !important; */
  
 }
 
