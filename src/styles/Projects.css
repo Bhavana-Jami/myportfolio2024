@@ -1,15 +1,15 @@
 #project-container {
-  /* min-height: 100vh !important; */
   display: grid !important;
   justify-content: center !important;
   align-items: center !important;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)) !important;
   padding: 2% 5% !important;
+ 
   
   /* margin: 1rem !important; */
  
 }
-.project-heading{
+#project-heading{
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -21,22 +21,23 @@ span{
   letter-spacing: 1.5px ;
 }
 #projects{
-  min-height: 100vh !important;
+  height: 100vh !important;
   width: 100% !important;
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
   flex-direction: column !important;
+  background-color: #5928e5;
 }
 .card {
   margin: 0.3rem !important;
-  background: rgb(89, 40, 213) !important;
-  background: radial-gradient(
+  background: rgb(0, 0, 0) !important;
+  /* background: radial-gradient(
     circle,
     rgba(89, 40, 213, 1) 0%,
     rgba(89, 40, 229, 1) 35%,
     rgba(89, 40, 246, 1) 100%
-  ) !important;
+  ) !important; */
   overflow: hidden !important;
   position: relative !important;
   cursor: pointer;

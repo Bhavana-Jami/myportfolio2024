@@ -6,7 +6,7 @@
   min-height: 25vh !important;
   width: 100% !important;
   max-width: none !important;
-  background: var(--color-secondary);
+  /* background: var(--color-secondary); */
   display: flex;
 
   flex-direction: column;
@@ -33,15 +33,15 @@
   
   font-size: clamp(1.2rem, 2.2vw, 2.2rem);
   /* padding: 0.2rem 0.8rem; */
-  margin: 0.8%;
+  margin: 0.2%;
   cursor: pointer;
 }
 .sm-icon a{
-  color: black !important;
+  color:  black !important;
   text-decoration: none !important;
 }
 .move-up-rocket{
-  color: black !important;
+  color:  #6937f1 !important;
   font-size: clamp(1.2rem, 3vw, 2.2rem);
   cursor: pointer;
 

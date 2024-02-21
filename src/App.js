@@ -24,7 +24,7 @@ function App() {
   const projectsRef = useRef(null);
 
   return (
-    <Container id="app" fluid>
+    <Container id="app">
       <Header
         expand="md"
         homeRef={homeRef}

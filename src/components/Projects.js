@@ -10,7 +10,7 @@ const Projects = forwardRef((props, ref) => {
   return (
 
     <div className="section" id="projects">
-      <div className="project-heading"><h2>Some of my work </h2><span>more to come ...</span></div>
+      <div id="project-heading" className="section-heading"><h2>Some of my work </h2><span>more to come ...</span></div>
       <Container
         ref={ref}
         id="project-container"

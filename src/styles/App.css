@@ -27,21 +27,23 @@
 #app {
   scroll-behavior: smooth;
   height: 100vh;
+  max-width: 100%;
   scroll-snap-type: y mandatory;
   background-color: var(--color-black);
   color: var(--color-white) !important;
   
 
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .section {
   min-height: 100vh ;
   scroll-snap-align: start;
-  /* display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  flex-direction: column !important; */
- 
+}
+.section-heading{
+  margin-top: -5%;
+  font-size: clamp(1rem, 0.6667rem + 1.7778vw, 2rem);
+  letter-spacing: 0.5px;
 }
 
 /* width */
