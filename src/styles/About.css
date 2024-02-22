@@ -1,10 +1,31 @@
-img{
-    height: 11rem;
+.overlay{
+    position: relative;
+    height: 10.57rem;
+
     width: 11rem;
     border-radius: 50%;
-    object-fit: cover !important;
+opacity: 0.8;
+transition: 0.1 ease-out;
+    background-color: #5928e5;
+}
+
+img{
+    position: absolute;
+    height: 10.57rem;
+    width: 11rem;
+    border-radius: 50%;
+    object-fit:contain;
+    opacity: 0.6;
+}
+img:hover{
+    opacity: 1;
 }
 .about-description{
     width: 50%;
     text-align: center;
+    color: #5928e5;
+    
+}
+#about-heading{
+    color: #ccd6f6;
 }

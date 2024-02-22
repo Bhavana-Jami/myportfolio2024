@@ -1,46 +1,46 @@
-#project-container {
-  display: grid !important;
+#projects-container{
+  height: 100vh !important;
+  width: 100% !important;
+  display: flex !important;
+  overflow-y: scroll;
   justify-content: center !important;
   align-items: center !important;
+  flex-direction: column !important;
+  background-color: #5928e5 !important;
+}
+
+#projects{
+  height: 100vh;
+  display: grid !important;
+  justify-content: center !important;
+  align-items: center ;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)) !important;
   padding: 2% 5% !important;
  
-  
-  /* margin: 1rem !important; */
- 
 }
 #project-heading{
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: black;
 }
 span{
   font-size: 0.9rem !important;
-  color: #5928e5;
+  color: #ccd6f6;
   letter-spacing: 1.5px ;
 }
-#projects{
-  height: 100vh !important;
-  width: 100% !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  flex-direction: column !important;
-  background-color: #5928e5;
-}
+
 .card {
-  margin: 0.3rem !important;
+  height: 20vh !important;
+  max-width: 100% !important;
+  margin:0 0.3rem !important;
   background: rgb(0, 0, 0) !important;
-  /* background: radial-gradient(
-    circle,
-    rgba(89, 40, 213, 1) 0%,
-    rgba(89, 40, 229, 1) 35%,
-    rgba(89, 40, 246, 1) 100%
-  ) !important; */
   overflow: hidden !important;
   position: relative !important;
   cursor: pointer;
+  margin-bottom: 1rem !important;
 }
 .cover {
   min-height: 25vh !important;
@@ -55,8 +55,12 @@ span{
 }
 .cover h3 {
   font-weight: bold;
-  color: black !important;
+  letter-spacing: 1.2px;
+  color: #ccd6f6 !important;
   margin-bottom: 10% !important;
+}
+.cover h6{
+  color: #5928e5 !important;
 }
 .card:hover {
   transform: translateY(-4px) !important;
@@ -69,59 +73,20 @@ span{
 .card:hover h6{
   transform: scale(1.3) !important;
   transition: all 0.3s ease-out !important;
+  opacity: 0 !important;
 }
 .card:hover h3 {
   transform: scale(1.1) translateY(-20px) !important;
   opacity: 0 !important;
 }
-.card:hover h6{
-  transform: scale(1.1) translateY(-20px) !important;
-  opacity: 0 !important;
-}
-.card-body {
-  height: 100% !important;
-  position: absolute;
-  /* top: 0%;
-  left: 0%; */
-  width: 100% !important;
-  text-align: center !important;
-  /* color: aliceblue !important; */
-}
-.card-title {
-  opacity: 0 !important;
-  transform: translateY(30px) !important;
-  transition: all 0.3s ease-out !important;
-}
-.card-subtitle {
-  opacity: 0 !important;
-  transform: translateY(30px) !important;
-  transition: all 0.3s ease-out 0.1s !important;
-}
-.card-text {
-  opacity: 0 !important;
-  transform: translateY(30px) !important;
-  transition: all 0.3s ease-out 0.2s !important;
-  /* white-space: nowrap !important; */
-}
-.card-link {
-  opacity: 0 !important;
-  transform: translateY(30px) !important;
-  transition: all 0.3s ease-out 0.3s !important;
-}
-.card:hover .card-title {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-.card:hover .card-subtitle {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-.card:hover .card-text {
-  transform: translateY(0) !important;
 
-  opacity: 1 !important;
+.magnifier{
+  /* opacity: 0 !important; */
+  font-size: 3vw;
+  color: #5928e5;
 }
-.card:hover .card-link {
+.card:hover .magnifier {
   opacity: 1 !important;
   transform: translateY(0) !important;
+   
 }
