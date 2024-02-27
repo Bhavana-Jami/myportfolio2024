@@ -7,7 +7,7 @@ const Home = forwardRef((props, ref) => {
 
   return (
     <Container id="home" ref={ref} className="section">
-     
+     {/* <Header/> */}
       <Row id="hi" >Hi, I am</Row>
       <Row id="name" >Bhavana Jami.</Row>
       <Row id="tagline">I love to create, develop.</Row>
