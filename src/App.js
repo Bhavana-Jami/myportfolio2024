@@ -37,6 +37,7 @@ function App() {
       <Skills ref={skillsRef} />
       <Projects ref={projectsRef} />
       <Footer homeRef={homeRef} />
+      {/* <Skills/> */}
     </Container>
   );
 }

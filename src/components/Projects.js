@@ -9,7 +9,10 @@ import { RxGithubLogo } from "react-icons/rx";
 
 const Projects = forwardRef((props, ref) => {
   const [modalShow, setModalShow] = React.useState(false);
-
+  const projects=[{name:"Trigli",techstack:"ReactJs Bootstrap CSS",description:"asjdfgjdsh duh duh dahhh"}]
+  // const project = ()=>{
+  //   projects.map((project))
+  // }
   return (
     <>
       <Modal
@@ -56,26 +59,29 @@ const Projects = forwardRef((props, ref) => {
           <SlMagnifierAdd className="magnifier" onClick={() => setModalShow(true)} />
 
         </div>
-        <div className="project-card">
+        <div className="project-card" >
           {/* <img src={pic} /> */}
           <div className="cover">
             <h3>Trigli</h3>
             <h6>ReactJS, React Bootstrap</h6></div>
-          <SlMagnifierAdd className="magnifier" />
-        </div>
-        <div className="project-card">
+          <SlMagnifierAdd className="magnifier" onClick={() => setModalShow(true)} />
+
+        </div><div className="project-card" >
           {/* <img src={pic} /> */}
           <div className="cover">
             <h3>Trigli</h3>
             <h6>ReactJS, React Bootstrap</h6></div>
-          <SlMagnifierAdd className="magnifier" />
-        </div> <div className="project-card">
+          <SlMagnifierAdd className="magnifier" onClick={() => setModalShow(true)} />
+
+        </div><div className="project-card" >
           {/* <img src={pic} /> */}
           <div className="cover">
             <h3>Trigli</h3>
             <h6>ReactJS, React Bootstrap</h6></div>
-          <SlMagnifierAdd className="magnifier" />
-        </div>
+          <SlMagnifierAdd className="magnifier" onClick={() => setModalShow(true)} />
+
+        </div> 
+        
 
       </div>
     </div >

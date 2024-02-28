@@ -11,29 +11,17 @@ import {
 } from "react-icons/fa";
 
 const Skills = forwardRef((props, ref) => {
+  const skills = ["<>HTML</>",".CSS","<script/>","ReactJS()","BootStrap","git.init","Bootstrap"]
   return (
     <div ref={ref} className="section" id="skills-container">
       <div className="section-heading" id="tech-heading">Some tech I have worked with</div>
       <div className="icons">
-        <div className="section-one-icons">
-          <FaBootstrap className="skill-icon" />
-          <FaReact className="skill-icon" />
-        </div>
-        <div className="section-two-icons">
-
-
-
-          <FaHtml5 className="skill-icon" />
-          <FaCss3Alt className="skill-icon" />
-          <TbBrandJavascript className="skill-icon" />
-        </div>
-        <div className="section-three-icons">
-          {/* <SiStyledcomponents className="skill-icon" /> */}
-          <FaGithub className="skill-icon" />
-
-          <FaGithub className="skill-icon" />
-        </div>
-
+          {/* <FaBootstrap className="skill-icon" />
+          <FaReact className="skill-icon" /> */}
+          {
+            skills.map(skill => <span className="skill-icon">{skill}</span>)
+          }
+        
       </div>
     </div>
   );

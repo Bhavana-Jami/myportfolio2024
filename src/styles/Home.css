@@ -13,7 +13,11 @@
   height: 90vh !important;
   width: 100% !important;
   /* margin-top: 5% !important; */
-  padding-top: -10% !important;
+  /* position: absolute;
+  left: 50%;
+  top: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* padding-top: -10% !important; */
   padding-left: 5% !important;
   padding-right: 5% !important;
   display: flex !important;
