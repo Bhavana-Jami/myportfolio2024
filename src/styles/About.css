@@ -1,31 +1,36 @@
-.overlay{
-    position: relative;
-    height: 10.57rem;
+.overlay {
+  position: relative;
+  height: 10.57rem;
 
-    width: 11rem;
-    border-radius: 50%;
-opacity: 0.8;
-transition: 0.1 ease-out;
-    background-color: #5928e5;
+  width: 11rem;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: 0.1 ease-out;
+  background-color: #5928e5;
 }
 
-img{
-    position: absolute;
-    height: 10.57rem;
-    width: 11rem;
-    border-radius: 50%;
-    object-fit:contain;
-    opacity: 0.6;
+img {
+  position: absolute;
+  height: 10.57rem;
+  width: 11rem;
+  border-radius: 50%;
+  object-fit: contain;
+  opacity: 0.6;
 }
-img:hover{
-    opacity: 1;
+img:hover {
+  opacity: 1;
 }
-.about-description{
-    width: 50%;
-    text-align: center;
-    color: #5928e5;
-    
+.about-description {
+  max-width: 650px;
+  text-align: center;
+  color: #ccd6f6;
+
+  /* color: #5928e5; */
+  /* padding: 0 2rem ; */
 }
-#about-heading{
-    color: #ccd6f6;
+#about-heading {
+  color: #ccd6f6;
+}
+.about-description span {
+  color: #5928e5 !important;
 }
