@@ -10,6 +10,7 @@
 }
 
 #projects {
+     height: 100vh !important;
   width: 100% !important;
   display: grid !important;
   justify-content: center !important;

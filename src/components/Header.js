@@ -16,7 +16,9 @@ import { BiMoon } from "react-icons/bi";
 function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
 
   const scrollIntoView = (elementRef) => {
-    elementRef.current.scrollIntoView({ behavior: "smooth" });
+    if (elementRef.current) {
+      elementRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   }
 
   return (
@@ -55,7 +57,7 @@ function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
               <Nav.Link onClick={() => scrollIntoView(projectsRef)}>
                 Projects
               </Nav.Link>
-              <Nav.Link onClick={() => scrollIntoView(homeRef)}>Blog</Nav.Link>
+              <Nav.Link to="https://bluewonk-94503.web.app/" href="https://bluewonk-94503.web.app/">Blog</Nav.Link>
               <Nav.Link>
                 <BsBrightnessHigh />
                 {/* <BiMoon /> */}

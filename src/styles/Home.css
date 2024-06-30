@@ -33,7 +33,6 @@
   letter-spacing: 0.8px;
   font-weight: bold;
   text-shadow: 80px 80px 10px rgba(81, 32, 216, 0.59);
-
 }
 #name {
   font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
@@ -78,8 +77,11 @@
   box-shadow: #8892b0 10rem;
   /* z-index: -1; */
   opacity: 0.38 !important;
+  -webkit-box-shadow: 7px -6px 5px 0px rgba(89, 40, 229, 0.66);
+  -moz-box-shadow: 7px -6px 5px 0px rgba(89, 40, 229, 0.66);
+  box-shadow: 7px -6px 5px 0px rgba(89, 40, 229, 0.66);
 }
-#blobTwo{
+#blobTwo {
   position: absolute;
   height: 150px;
   width: 150px;
@@ -131,6 +133,16 @@
   font-size: 14px;
   font-weight: bold;
 }
+#marqueeSix{
+  position: absolute;
+  top: 2%;
+  right: 30%;
+
+  color: #000 !important;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 #knowmore {
   z-index: 1;
   display: flex !important;
@@ -149,7 +161,7 @@
 #resume {
   color: #fff !important;
   border: #000 1px solid;
-  padding:1rem; /* Reduced padding to avoid squishing */
+  padding: 1rem; /* Reduced padding to avoid squishing */
   background-color: #000;
   /* opacity: 0.3; */
   z-index: 1;
@@ -158,8 +170,7 @@
   color: #fff !important;
   border: #000 1px solid;
   padding: 1rem; /* Reduced padding to avoid squishing */
-  background-color:#5c2ae5;
+  background-color: #5c2ae5;
   /* opacity: 0.3; */
   z-index: 1;
 }
-

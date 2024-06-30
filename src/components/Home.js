@@ -33,9 +33,15 @@ const Home = forwardRef((props, ref) => {
         <marquee id="marqueeFive" scrollamount="6">
           Wanna be girl dev.
         </marquee>
-        <marquee id="marqueeFour" scrollamount="7.5">
+        <marquee id="marqueeSix" scrollamount="7.5">
           Wanna be girl dev.
         </marquee>
+        {/* <marquee id="marqueeSeven" scrollamount="6.5" >
+          I use google to center a div, lol
+        </marquee>
+        <marquee id="marqueeEight" scrollamount="6">
+          Wanna be girl dev.
+        </marquee> */}
 
       </div>
       <div id="blobTwo"></div>
