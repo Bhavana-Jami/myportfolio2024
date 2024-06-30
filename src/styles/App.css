@@ -46,7 +46,9 @@
   font-size: clamp(1rem, 0.6667rem + 1.7778vw, 2rem);
   letter-spacing: 0.5px;
 }
-
+.section:first-child(){
+  background-color: yellow !important;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 0px;

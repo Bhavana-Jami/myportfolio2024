@@ -8,12 +8,12 @@
   --light-slate: #ccd6f6;
 }
 #navbar {
-  height: 10vh !important;
+  height: 16vh !important;
   width: 100% !important;
   /* position:sticky; */
   scroll-snap-stop: always !important;
   scroll-snap-align: start !important;
-  backdrop-filter: blur(19px) saturate(105%) !important;
+  /* backdrop-filter: blur(19px) saturate(105%) !important; */
   -webkit-backdrop-filter: blur(19px) saturate(105%) !important;
 }
 .navbar-toggle-icon span {
@@ -31,30 +31,34 @@
   --bs-navbar-toggler-focus-width: 0 !important;
 }
 .navbar-brand {
-  /* font-family: 'Moirai One', system-ui; */
-  font-size: clamp(1.8rem, 0.9167rem + 0.7778vw, 1.5rem) !important;
+  font-family: "Moirai One", system-ui;
+  /* font-size: clamp(1.8rem, 0.9167rem + 0.7778vw, 1.5rem) !important; */
+  font-size: 2rem !important;
   letter-spacing: 1.2px;
   cursor: pointer;
   padding-left: clamp(0.625rem, 0.4167rem + 1.1111vw, 1.25rem);
-  font-weight: bold !important;
+  font-weight: 700 !important;
   color: var(--color-secondary) !important;
-  text-shadow: #fdfdfd !important;
+  /* text-shadow: #fdfdfd !important; */
+  text-shadow: 8px 8px 10px rgba(81, 32, 216, 0.59);
 }
 
 .navbar a {
   font-size: clamp(13px, 3.5vw, 18px);
   /* font-weight: bold !important; */
   color: var(--light-slate) !important;
+  text-shadow: 1px 1px 100px rgba(69, 43, 149, 0.59);
 }
-.offcanvas.offcanvas-end{
+.navbar a:hover {
+color: #5928e5 !important;
+}
+.offcanvas.offcanvas-end {
   width: 80% !important;
   padding: 5% !important;
- 
-  background-color: rgba(89, 40, 229, 0.58) !important;
+
+  background-color: #5928e594 !important;
   color: var(--color-white) !important;
 }
-.btn-close{
+.btn-close {
   color: var(--color-white) !important;
 }
-
-

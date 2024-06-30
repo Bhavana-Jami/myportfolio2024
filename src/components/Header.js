@@ -10,6 +10,8 @@ import {
   Navbar,
 } from "react-bootstrap";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { BsBrightnessHigh, BsMoonStars } from "react-icons/bs";
+import { BiMoon } from "react-icons/bi";
 
 function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
 
@@ -22,7 +24,7 @@ function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
       key={expand}
       expand={expand}
       className="pt-4"
-      // fixed="top"
+      fixed="top"
       id="navbar"
     >
       <Container fluid>
@@ -53,8 +55,12 @@ function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
               <Nav.Link onClick={() => scrollIntoView(projectsRef)}>
                 Projects
               </Nav.Link>
-              <Nav.Link>Resume</Nav.Link>
-              <Nav.Link onClick={() => scrollIntoView(homeRef)}>Contact</Nav.Link>
+              <Nav.Link onClick={() => scrollIntoView(homeRef)}>Blog</Nav.Link>
+              <Nav.Link>
+                <BsBrightnessHigh />
+                {/* <BiMoon /> */}
+              </Nav.Link>
+
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
