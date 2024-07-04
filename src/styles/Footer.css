@@ -23,18 +23,21 @@
   display: flex;
   align-items: center !important;
   justify-content: center !important;
-  /* gap: 1%; */
+  /* gap: 1rem; */
   /* background-color: antiquewhite; */
   /* padding-bottom: 2%; */
+  padding: 5%;
 }
 .sm-icon {
-  
+  width: 8rem !important;
   background-color: #6937f1;
   
-  font-size: clamp(1.2rem, 2.2vw, 2.2rem) !important;
+  /* font-size: clamp(1.2rem, 2.2vw, 2.2rem) !important; */
   /* padding: 0.2rem 0.8rem; */
-  margin: 0.2%;
+
   cursor: pointer;
+  border-radius: 0.1rem;
+  padding: 0.6rem 0.7rem;
 }
 .sm-icon a{
   color:  #ffdbdb !important;
@@ -46,8 +49,4 @@
   cursor: pointer;
 
 
-}
-.copyright{
-  font-size: clamp(0.5rem, 0.9vw, 0.7rem);
-color: #8892b0 !important;
 }

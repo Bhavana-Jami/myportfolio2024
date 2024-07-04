@@ -8,7 +8,7 @@
   --light-slate: #ccd6f6;
 }
 #navbar {
-  height: 16vh !important;
+  /* height: 16vh !important; */
   width: 100% !important;
   /* position:sticky; */
   scroll-snap-stop: always !important;
@@ -50,15 +50,34 @@
   text-shadow: 1px 1px 100px rgba(69, 43, 149, 0.59);
 }
 .navbar a:hover {
-color: #5928e5 !important;
+  color: #5928e5 !important;
+  font-weight: 600 !important;
 }
 .offcanvas.offcanvas-end {
   width: 80% !important;
-  padding: 5% !important;
+  padding: 5.3% !important;
 
   background-color: #5928e594 !important;
   color: var(--color-white) !important;
 }
 .btn-close {
   color: var(--color-white) !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    margin-left: 7rem !important;
+  }
+  /* #navbar{
+    margin-right: 50rem !important;
+  } */
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    margin-left: 2rem !important;
+  }
+   #navbar{
+    margin-top: -3rem !important;
+  }
 }

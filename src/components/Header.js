@@ -26,11 +26,11 @@ function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
       key={expand}
       expand={expand}
       className="pt-4"
-      fixed="top"
+      // fixed="top"
       id="navbar"
     >
       <Container fluid>
-        <Navbar.Brand onClick={() => scrollIntoView(homeRef)} className="ms-4">
+        <Navbar.Brand onClick={() => scrollIntoView(homeRef)} className="">
           JB
         </Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}>
@@ -57,7 +57,11 @@ function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
               <Nav.Link onClick={() => scrollIntoView(projectsRef)}>
                 Projects
               </Nav.Link>
+              
               <Nav.Link to="https://bluewonk-94503.web.app/" href="https://bluewonk-94503.web.app/">Blog</Nav.Link>
+              {/* <Nav.Link onClick={() => scrollIntoView(projectsRef)}>
+                Resume
+              </Nav.Link> */}
               <Nav.Link>
                 <BsBrightnessHigh />
                 {/* <BiMoon /> */}

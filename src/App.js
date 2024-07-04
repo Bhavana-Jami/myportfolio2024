@@ -14,6 +14,7 @@ import Header from "./components/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
+import Contact from "./components/Contact";
 
 // import Card from "./components/Card";
 
@@ -22,9 +23,12 @@ function App() {
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
-
+  const contactRef = useRef(null)
   return (
     <Container id="app">
+      <div style={{height:"100vh",display:"flex",justifyContent:"space-evenly",marginTop:"-5.5rem",flexDirection:"column"}}>
+
+     
       <Header
         expand="md"
         homeRef={homeRef}
@@ -32,12 +36,16 @@ function App() {
         skillsRef={skillsRef}
         projectsRef={projectsRef}
       />
-      <Home ref={homeRef} />
+      <Home ref={homeRef}
+        contactRef={contactRef}
+
+      />
+       </div>
       <About ref={aboutRef} />
       <Skills ref={skillsRef} />
       <Projects ref={projectsRef} />
-      <Footer homeRef={homeRef} />
-      {/* <Skills/> */}
+      <Contact ref={contactRef} />
+<Footer/>
     </Container>
   );
 }
