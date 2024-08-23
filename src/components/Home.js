@@ -8,7 +8,7 @@ import { BsArrowRight } from "react-icons/bs";
 import Header from "./Header";
 import { Link } from "react-router-dom";
 import { Nav } from "react-bootstrap";
-const Home = forwardRef(({ contactRef }, ref) => {
+const Home = forwardRef(({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }, ref) => {
 
 
   const scrollIntoView = (elementRef) => {
@@ -16,22 +16,19 @@ const Home = forwardRef(({ contactRef }, ref) => {
       elementRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }
-  // const homeRef = useRef(null);
-  // const aboutRef = useRef(null);
-  // const skillsRef = useRef(null);
-  // const projectsRef = useRef(null);
-  // const contactRef = useRef(null)
+ 
   return (
     <Container id="home" ref={ref} >
-      {/* <Header
+     <Header
         expand="md"
         homeRef={homeRef}
         aboutRef={aboutRef}
         skillsRef={skillsRef}
         projectsRef={projectsRef}
-      /> */}
+        contactRef={contactRef}
+      />
      
-      <div  id="blobOne">
+      {/* <div  id="blobOne"> */}
 
         {/* <marquee id="marqueeOne" scrollamount="6.5" >
           I use google to center a div, lol
@@ -58,7 +55,7 @@ const Home = forwardRef(({ contactRef }, ref) => {
           Wanna be girl dev.
         </marquee> */}
 
-      </div>
+      {/* </div> */}
       {/* <div id="blobTwo"></div> */}
       <Row id="hi" >Hi, I am</Row>
       <Row id="name" >Bhavana Jami.</Row>

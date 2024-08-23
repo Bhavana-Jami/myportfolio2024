@@ -25,12 +25,12 @@ function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
     <Navbar
       key={expand}
       expand={expand}
-      className="pt-4"
+      // className="pt-5"
       // fixed="top"
       id="navbar"
     >
       <Container fluid>
-        <Navbar.Brand onClick={() => scrollIntoView(homeRef)} className="">
+        <Navbar.Brand onClick={() => scrollIntoView(homeRef)} className="align-items-center">
           JB
         </Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}>
@@ -47,7 +47,7 @@ function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-2 gap-2">
+            <Nav className="justify-content-end align-items-center flex-grow-1 pe-2 gap-2">
               <Nav.Link onClick={() => scrollIntoView(skillsRef)}>
                 About
               </Nav.Link>

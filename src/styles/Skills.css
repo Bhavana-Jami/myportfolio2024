@@ -1,8 +1,26 @@
 .skill-icon:hover {
   color: black !important;
   transform: scale(1.1);
+  position: relative;
+  border-top: 1px solid #5928e5;
+  border-left: 1px solid #5928e5;
+  background-color: #5928e5;
+ 
 }
+.skill-icon:hover p{
+  display: flex;
+  transform: scale(1.1);
 
+}
+.icons > :nth-last-child(-n+4) {
+  /* border-bottom: none !important; */
+}
+.icons > :nth-child(4){
+  /* border-right: none !important; */
+}
+.icons > :nth-child(8){
+  /* border-right: none !important; */
+}
 #tech-heading {
   color: #ffdbdb !important;
   /* margin-bottom: %; */
@@ -16,32 +34,70 @@
   gap: 2rem;
 }
 .skill-icon {
-  /* font-size: clamp(0.7rem, 2.3333rem + 3.5556vw, 1rem) !important; */
-  height: 7rem !important;
-  background-color: #5928e5;
+  height: 9rem !important;
+  background-color: #0b0224;
   cursor: pointer;
-  font-size: 1rem !important;
   transition: 0.3s ease-out;
-  color: #ccd6f6 !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  position: relative;
+ 
+padding:0 2rem !important;
+
+}
+.skill-icon span{
+  font-size: clamp(0.7rem, 2.3333rem + 3.5556vw, 1rem) !important;
+  font-size: 1rem !important;
   font-weight: bold;
+  margin-bottom: 0.5rem ;
+
+}
+.skill-icon p{
+  text-align: center;
+  display: none;
+  transition: 0s ease-out;
+  font-size: 0.7rem ;
+  font-weight: bold;
+  color:#ffdbdb;
+  /* color: #ccd6f6 !important; */
+
+
+}
+
+#plus_icon{
+  position: absolute;
+  left: 80%;
+  top:10%
 }
 .icons {
   display: grid;
   justify-content: center;
   align-items: center;
-  width: 65% !important;
-  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr)) !important;
-  padding: 0 3rem;
+  width: 70% !important;
+  /* height: 80vh; */
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 4fr)) !important;
+  /* margin: 3rem; */
   grid-gap: 1rem !important;
+
 }
 @media only screen and (max-width: 600px) {
-  .skill-icon {
+  /* .skill-icon {
     height: 3rem !important;
   }
   .icons {
     width: 100% !important;
+  } */
+}
+@media (min-width: 768px){
+  .skill-icon{
+    /* border-bottom: 1px solid #5928e5;
+    border-right: 1px solid #5928e5; */
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+
+    box-shadow: 5px 10px  #443866;
   }
+  
 }

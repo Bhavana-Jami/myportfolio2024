@@ -26,19 +26,22 @@ function App() {
   const contactRef = useRef(null)
   return (
     <Container id="app">
-      <div style={{height:"100vh",display:"flex",justifyContent:"space-evenly",marginTop:"-5.5rem",flexDirection:"column"}}>
+      <div style={{display:"flex",justifyContent:"space-evenly",flexDirection:"column"}}>
 
      
-      <Header
+      {/* <Header
         expand="md"
         homeRef={homeRef}
         aboutRef={aboutRef}
         skillsRef={skillsRef}
         projectsRef={projectsRef}
-      />
-      <Home ref={homeRef}
+      /> */}
+      <Home
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        skillsRef={skillsRef}
+        projectsRef={projectsRef}
         contactRef={contactRef}
-
       />
        </div>
       <About ref={aboutRef} />

@@ -118,8 +118,8 @@ const Contact = forwardRef((props, ref) => {
             </Form.Group>
           </Col>
         </Row>
-        <Row className="text-center justify-content-center">
-          <Col id="shoot" md={3}>
+        <Row className="text-center justify-content-center ps-3 pe-3">
+          <Col id="shoot" className="" md={3} sm={12} xs={12}>
             {/* <Button type="submit" > */}
             Shoot &nbsp; &nbsp;
             <BsArrowRight />

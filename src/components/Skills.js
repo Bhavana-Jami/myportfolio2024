@@ -11,17 +11,21 @@ import {
 } from "react-icons/fa";
 
 const Skills = forwardRef((props, ref) => {
-  const skills = ["<>HTML</>",".CSS","<script/>","ReactJS()","BootStrap","git.init","Bootstrap"]
+  const skills = ["<>HTML</>", ".CSS", "<script/>", "ReactJS()", "BootStrap", "git.init", "Bootstrap", "Random"]
   return (
     <div ref={ref} className="section" id="skills-container">
-      <div className="section-heading" id="tech-heading">Some tech I have worked with</div>
+      <div className="section-heading" id="tech-heading">You can count me on these ..</div>
       <div className="icons">
-          {/* <FaBootstrap className="skill-icon" />
+        {/* <FaBootstrap className="skill-icon" />
           <FaReact className="skill-icon" /> */}
-          {
-            skills.map(skill => <span className="skill-icon">{skill}</span>)
-          }
-        
+        {
+          skills.map(skill => <div className="skill-icon">
+            {/* <span id="plus_icon">+</span> */}
+            <span >{skill}</span>
+            <p>Some text should be here, it is a must.</p>
+            </div>)
+        }
+
       </div>
     </div>
   );
