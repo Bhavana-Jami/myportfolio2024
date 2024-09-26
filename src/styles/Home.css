@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box !important;
+}
+
 :root {
   --color-white: #fff;
   --color-black: #000;
@@ -6,137 +10,171 @@
   --slate: #8892b0;
   --light-slate: #ccd6f6;
 }
+
 .container {
   max-width: 100% !important;
 }
+
 #home {
   height: 100vh !important;
-  width: 100% !important;
-
-  padding-left: 5% !important;
-  padding-right: 5% !important;
+  /* padding-left: 5% !important;
+  padding-right: 5% !important; */
   display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+  justify-content: space-between !important;
+  /* align-items: center !important; */
   flex-direction: column !important;
-  position: relative;
+  position: relative !important;
 }
+
+/* Update the background styling */
+.checked_background {
+  height: 100vh;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 50%;
+  background-size: 60px 60px, 60px 60px, cover;
+  z-index: 1;
+  opacity: 0.4;
+  background-position: center, center, center;
+  background-image: linear-gradient(to top, #3a11a8 1.5px, transparent 1px),
+    linear-gradient(to left, #34148d 1.5px, transparent 1px),
+    radial-gradient(circle, transparent 50%, #2f117f 100%);
+}
+
+.solid_background {
+  height: 100vh;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 50%;
+  z-index: 0 !important;
+  background-color: #5928e5;
+  opacity: 0.6;
+}
+
+.hero_section {
+  height: 100vh;
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* gap: 6rem; */
+  /* padding: 2rem ; */
+  /* z-index: 10 !important; */
+}
+
+.my_image {
+  width: 100%;
+  max-width: 280px;
+  height: 290px;
+  max-height: 390px;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 10;
+  border-bottom-right-radius: 10px !important;
+
+}
+
+.hero_description {
+  margin-right: 4rem;
+}
+
 #hi {
   color: var(--color-secondary) !important;
   font-size: clamp(10px, 2vw, 15px);
   letter-spacing: 0.8px;
   font-weight: bold;
   text-shadow: 80px 80px 10px rgba(81, 32, 216, 0.59);
+  opacity: 1 !important;
 }
+
 #name,
 #name span {
   font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   text-align: left !important;
-  font-size: clamp(40px, 8vw, 80px) !important;
-  font-size: 5rem;
+  font-size: 4.4rem;
   font-weight: bolder;
   color: var(--light-slate) !important;
-  z-index: 1;
-  text-shadow: 4px 4px 10px rgba(81, 32, 216, 0.59);
+  z-index: 10 !important;
+  text-shadow: 4px 4px 10px rgba(1, 0, 2, 0.59);
+  word-break: break-all !important;
+  word-wrap: break-word !important;
+  margin-left: -px;
 }
 
-#tagline {
-  font-size: clamp(20px, 3vw, 40px);
+.tagline {
+  font-size: 2.6vw;
   font-weight: 600;
   margin-top: -1.2%;
   letter-spacing: 0.3px;
-  color: var(--slate) !important;
+  color: #ffd9d9 !important;
   z-index: 1;
-  text-shadow: 5px 5px 10px rgba(81, 32, 216, 0.59);
+  text-shadow: 5px 5px 10px rgba(10, 1, 37, 0.59);
 }
+
+.tagline_wrapper {
+  display: flex !important;
+  overflow: hidden !important;
+  position: relative;
+}
+
+.spin_word {
+  color: #ffd9d9 !important;
+}
+
+.words {
+  top: 0;
+  left: 40%;
+  position: absolute;
+  overflow: hidden !important;
+}
+
+@keyframes spin_words {
+  10% {
+    transform: translateY(-118%);
+  }
+
+  25% {
+    transform: translateY(-108%);
+  }
+
+  35% {
+    transform: translateY(-217%);
+  }
+
+  50% {
+    transform: translateY(-205%);
+  }
+
+  60% {
+    transform: translateY(-317%);
+  }
+
+  75% {
+    transform: translateY(-305%);
+  }
+
+  85% {
+    transform: translateY(-417%);
+  }
+
+  100% {
+    transform: translateY(-405%);
+  }
+}
+
 #description {
   width: 100%;
   justify-content: center;
   margin-top: 0.5%;
   color: var(--slate) !important;
-  /* text-justify: center !important; */
   white-space: wrap !important;
   word-wrap: break-word !important;
   text-align: center !important;
   z-index: 1;
-}
-
-#blobOne {
-  position: absolute;
-  height: 700px;
-  width: 700px;
-  background-color: #5c2ae5;
-  border-radius: 50%;
-  top: 20%;
-  left: -4%;
-  box-shadow: #8892b0 10rem;
-  /* z-index: -1; */
-  opacity: 0.38 !important;
-  -webkit-box-shadow: 7px -6px 5px 0px rgba(89, 40, 229, 0.66);
-  -moz-box-shadow: 7px -6px 5px 0px rgba(89, 40, 229, 0.66);
-  box-shadow: 4px -4px 5px 0px rgba(89, 40, 229, 0.66);
-}
-#blobTwo {
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  background-color: #5c2ae5;
-  border-radius: 50%;
-  right: -4%;
-  top: -6%;
-}
-#marqueeOne {
-  position: absolute;
-  top: 56%;
-  left: -6%;
-  color: #000 !important;
-  font-size: 14px;
-  font-weight: bold;
-}
-#marqueeTwo {
-  position: absolute;
-  top: 58%;
-  left: -4%;
-  color: #000 !important;
-  font-size: 14px;
-  font-weight: bold;
-}
-#marqueeThree {
-  position: absolute;
-  top: 60%;
-  left: -6%;
-
-  color: #000 !important;
-  font-size: 14px;
-  font-weight: bold;
-}
-#marqueeFour {
-  position: absolute;
-  top: 62%;
-  left: -8%;
-
-  color: #000 !important;
-  font-size: 14px;
-  font-weight: bold;
-}
-#marqueeFive {
-  position: absolute;
-  top: 64%;
-  left: -10%;
-
-  color: #000 !important;
-  font-size: 14px;
-  font-weight: bold;
-}
-#marqueeSix {
-  position: absolute;
-  top: 2%;
-  right: 30%;
-
-  color: #000 !important;
-  font-size: 12px;
-  font-weight: bold;
 }
 
 #knowmore {
@@ -150,8 +188,10 @@
 
 #resume,
 #hireMe {
-  flex-grow: 1; /* Allow both columns to grow equally */
-  text-align: center; /* Optional: Center align text within columns */
+  flex-grow: 1;
+  /* Allow both columns to grow equally */
+  text-align: center;
+  /* Optional: Center align text within columns */
 }
 
 #resume {
@@ -161,9 +201,11 @@
   transition: ease-in 0.5s;
   cursor: pointer;
 }
+
 #resume a {
   color: #fff !important;
 }
+
 #hireMe {
   /* width: 15rem !important; */
   border: 1px solid var(--color-secondary);
@@ -177,59 +219,112 @@
 #hireMe:hover {
   background-color: var(--color-secondary);
 }
+
 /* media queries */
-@media (max-width: 768px) {
-  #hi,
-  #name,
-  #tagline {
-    font-size: 1.2rem !important;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .hero_section {
+    flex-direction: column-reverse;
+    z-index: 100;
   }
-
-  #name {
-    font-size: 2rem !important;
+  .hero_description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-right: 0 !important;
   }
-
-  #tagline {
-    font-size: 1rem !important;
+  #name{
+    font-size: 3.3rem;
   }
-
+  #hi{
+    font-size: 1rem;
+  }
+  .checked_background{
+    height: 100vh;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    /* z-index: ; */
+  }
+  .solid_background{
+    /* height: 50vh;
+    width: 100%;
+    top:50%;
+    left:0; */
+    display: none;
+   
+  }
+  #knowmore{
+    /* flex-direction: column !important; */
+    width: 100% !important;
+  }
+#hireMe{
+  /* border: none; */
+  /* margin-top: none !important; */
+  padding: 1rem 0.8rem !important;
+}
   #resume,
   #hireMe {
-    font-size: 1rem !important;
+    margin-top: 0.7rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+  .tagline{
+    font-size: 1.7rem !important;
+  }
+  .hero_description{
+    margin-top: 1.3rem;
   }
 }
 
-
-@media (max-width: 576px) {
-  #hi,
-  #name,
-  #tagline {
-    font-size: 1rem !important;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .my_image {
+    height: 200px;
+    width: 180px;
   }
-
+  .hero_description{
+    margin-right: 2.3rem;
+  }
   #name {
-    font-size: 2.6rem !important;
-    text-align: left !important;
+    font-size: 3rem;
   }
-
-  #tagline {
-    font-size:1.3rem !important;
-    text-align: left !important;
-  }
-
-  #resume{
-    font-size: 0.8rem;
-    width: 0.5rem !important;
-    margin: 0rem  !important;
-    margin-left: 2rem !important;
-    margin-right: 2rem !important ;
-    /* padding-top: 1rem !important; */
+  #hi{
 
   }
+  /* #tagline {
+    font-size: 3rem !important;
+  } */
+  #resume,
   #hireMe {
-    font-size: 0.8rem;
-    margin: 0rem  !important;
-    margin-left: 2rem !important;
-    margin-right: 2rem !important ;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
   }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .my_image {
+    height: 200px;
+  }
+  #name {
+    font-size: 3rem;
+  }
+  #tagline {
+    font-size: 1rem;
+  }
+  #resume,
+  #hireMe {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

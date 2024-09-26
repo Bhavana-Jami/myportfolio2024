@@ -42,8 +42,13 @@ const Contact = forwardRef((props, ref) => {
       ref={ref}
       className="section d-flex justify-content-center align-items-center flex-column p-5"
     >
-      <div style={{ maxWidth: "400px" }}>
+      <div style={{ maxWidth: "300px" }}>
         <Row className="mb-2 mt-2 text-center">
+           {/* <div className="available_to_work">
+          <span className="dot">●</span>
+          <span className="text">
+            Available to wonk</span>
+          </div> */}
           <h2
             style={{
               fontWeight: "900",
@@ -51,20 +56,21 @@ const Contact = forwardRef((props, ref) => {
               letterSpacing: "2px",
             }}
           >
-            Send me a message!
+            Let's connect !
           </h2>
+
         </Row>
-        <Row className="mb-3 text-center">
+        {/* <Row className="mb-3 text-center">
           <h5
-            style={{ color: "#ccd6f6", opacity: "0.7", letterSpacing: "1.3px",textAlign:"center" }}
+            style={{ color: "#ccd6f6", opacity: "0.7", letterSpacing: "1.3px",textAlign:"center" , fontSize:"0.8rem"}}
           >
             Thoughts of hiring me, or just wanna say hello? Let's connect!
           </h5>
-        </Row>
+        </Row> */}
       </div>
       <Form ref={form} onSubmit={sendEmail} className="w-100 w-md-75 pt-4">
         <Row className="mb-5 justify-content-center">
-          <Col xs={12} md={4} className="me-2 mb-4 mb-md-0 me-sm-0 me-xs-0">
+          <Col xs={12} md={3} className="me-2 mb-4 mb-md-0 me-sm-0 me-xs-0">
             <Form.Group
               controlId="exampleForm.ControlInput1"
               className="form-group"
@@ -80,7 +86,7 @@ const Contact = forwardRef((props, ref) => {
               />
             </Form.Group>
           </Col>
-          <Col xs={12} md={4}>
+          <Col xs={12} md={3}>
             <Form.Group
               controlId="exampleForm.ControlInput1"
               className="form-group"
@@ -97,7 +103,7 @@ const Contact = forwardRef((props, ref) => {
           </Col>
         </Row>
         <Row className="mb-3 justify-content-center">
-          <Col md={8}>
+          <Col md={6}>
             <Form.Group
               controlId="exampleForm.ControlTextarea1"
               className="form-group"

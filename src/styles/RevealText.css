@@ -1,0 +1,5 @@
+/* RevealText.css */
+.reveal-text span {
+    transition: color 0.3s ease-out;
+  }
+  

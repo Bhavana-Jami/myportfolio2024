@@ -5,6 +5,9 @@ import pic from '../assets/my-picture.jpeg'
 import Masonry from 'react-masonry-css'
 import { SlMagnifierAdd } from "react-icons/sl";
 import { RxGithubLogo } from "react-icons/rx";
+import projectImage from '../assets/Trigli.png'
+import p2 from '../assets/as.png'
+import p3 from '../assets/ss.png'
 // import {}
 
 const Projects = forwardRef((props, ref) => {
@@ -25,66 +28,95 @@ const Projects = forwardRef((props, ref) => {
   }
   console.log(handleModalClick)
   return (
-    <Container className="section">
-      {selectedProject?.map((selecteProject) => (
-        // <div>{selecteProject.description}</div>
-        <Modal
-          {...props}
-          size="lg"
-          aria-labelledby="contained-modal-title-vcenter "
-          centered
-          show={modalShow}
-          onHide={() => setModalShow(false)}
-        >
-          <Modal.Header closeButton>
-            <Modal.Title id="contained-modal-title-vcenter">
-              {selecteProject.name}
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            {/* <h4>Centered Modal</h4> */}
-            <p>
-              {selecteProject.description}
-            </p>
-          </Modal.Body>
-          <Modal.Footer>
-            <a href={selecteProject.demo}>Demo</a>
-            <a href={selecteProject.github}>Github</a>
-          </Modal.Footer>
-        </Modal>
+      <Container className="section">
+        {selectedProject?.map((selecteProject) => (
+          // <div>{selecteProject.description}</div>
+          <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter "
+            centered
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="contained-modal-title-vcenter">
+                {selecteProject.name}
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              {/* <h4>Centered Modal</h4> */}
+              <p>
+                {selecteProject.description}
+              </p>
+            </Modal.Body>
+            <Modal.Footer>
+              <a href={selecteProject.demo}>Demo</a>
+              <a href={selecteProject.github}>Github</a>
+            </Modal.Footer>
+          </Modal>
 
-      ))}
+        ))}
 
-      <Container className="section" id="projects-container" style={{ filter: modalShow ? "blur(4px)" : null }}>
-      <Row id="project-heading" className="section-heading" style={{ textAlign: "center", fontWeight: "bold" }}>
-    <h2 style={{ fontWeight: "bold" }}>Some of my work</h2>
-    <span >more to come ...</span>
-  </Row>
-        <Row
-          ref={ref}
-          id="projects"
-        >
-
-
-          {
-            projects.map((project) => (
-              <Col className="project-card" >
-                {/* <img src={pic} /> */}
-                <div className="cover">
-                  <h3>{project.name}</h3>
-                  <h6>{project.techstack}</h6></div>
-                <SlMagnifierAdd className="magnifier" onClick={() => handleModalClick(project.id)} />
-
-              </Col>
-            ))
-          }
+        <Container className="section" id="projects-container" style={{ filter: modalShow ? "blur(4px)" : null }}>
+        <Row id="project-heading" className="section-heading" style={{ textAlign: "center", fontWeight: "bold" }}>
+      <h2 style={{ fontWeight: "bold" }}>Some of my work</h2>
+      <span >more to come ...</span>
+    </Row>
+          <Row
+            ref={ref}
+            id="projects"
+          >
 
 
+            {
+              projects.map((project) => (
+                <Col className="project-card" >
+                  {/* <img src={pic} /> */}
+                  <div className="cover">
+                    <h3>{project.name}</h3>
+                    <h6>{project.techstack}</h6></div>
+                  <SlMagnifierAdd className="magnifier" onClick={() => handleModalClick(project.id)} />
 
-        </Row>
+                </Col>
+              ))
+            }
+
+
+
+          </Row>
+        </Container>
       </Container>
-    </Container>
-  );
+    // <Container className="section" id="projects-container">
+    //   <div className="project-card">
+    //     <div
+    //       className="cover"
+    //       style={{
+    //         backgroundImage: `url(${projectImage})`, height: '300px', width: '300px', backgroundSize: 'cover',
+    //         backgroundPosition: 'center'
+    //       }}></div>
+    //   </div>
+    //   <div className="project-card">
+
+    //     <div className="cover"
+    //       c style={{
+    //         backgroundImage: `url(${p2})`, height: '300px', width: '300px', backgroundSize: 'cover',
+    //         backgroundPosition: 'center'
+    //       }}></div>
+    //   </div>
+    //   <div className="project-card">
+
+    //     <div
+    //       className="cover"
+    //       style={{
+    //         backgroundImage: `url(${p3})`, height: '300px', width: '300px', backgroundSize: 'cover',
+    //         backgroundPosition: 'center'
+    //       }}></div>
+    //   </div>
+
+    // </Container>
+
+  )
 });
 
 export default Projects;

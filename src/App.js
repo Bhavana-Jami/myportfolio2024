@@ -10,13 +10,9 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Search from "./components/Search";
 import Header from "./components/Header";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import SignIn from "./components/SignIn";
-import SignUp from "./components/SignUp";
 import Contact from "./components/Contact";
-
-// import Card from "./components/Card";
+import RevealText from "./components/RevealText";
 
 function App() {
   const homeRef = useRef(null);
@@ -26,16 +22,7 @@ function App() {
   const contactRef = useRef(null)
   return (
     <Container id="app">
-      <div style={{display:"flex",justifyContent:"space-evenly",flexDirection:"column"}}>
-
      
-      {/* <Header
-        expand="md"
-        homeRef={homeRef}
-        aboutRef={aboutRef}
-        skillsRef={skillsRef}
-        projectsRef={projectsRef}
-      /> */}
       <Home
         homeRef={homeRef}
         aboutRef={aboutRef}
@@ -43,13 +30,20 @@ function App() {
         projectsRef={projectsRef}
         contactRef={contactRef}
       />
-       </div>
       <About ref={aboutRef} />
       <Skills ref={skillsRef} />
       <Projects ref={projectsRef} />
       <Contact ref={contactRef} />
-<Footer/>
     </Container>
+    // <div style={{ height: '200vh', padding: '50px' }}>
+    //   <h1>Scroll down to reveal text</h1>
+    //   <div style={{ marginTop: '100vh' }}>
+    //     <RevealText>
+    //       <h2>This text will reveal on scroll! </h2>
+    //       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    //     </RevealText>
+    //   </div>
+    // </div>
   );
 }
 

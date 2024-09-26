@@ -13,13 +13,13 @@
 
 }
 .icons > :nth-last-child(-n+4) {
-  /* border-bottom: none !important; */
+  border-bottom: none !important;
 }
 .icons > :nth-child(4){
-  /* border-right: none !important; */
+  border-right: none !important;
 }
 .icons > :nth-child(8){
-  /* border-right: none !important; */
+  border-right: none !important;
 }
 #tech-heading {
   color: #ffdbdb !important;
@@ -31,11 +31,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  /* gap: 1rem; */
 }
 .skill-icon {
-  height: 9rem !important;
-  background-color: #0b0224;
+  height: 25vh !important;
+  /* background-color: #0b0224; */
   cursor: pointer;
   transition: 0.3s ease-out;
   display: flex;
@@ -75,11 +75,11 @@ padding:0 2rem !important;
   display: grid;
   justify-content: center;
   align-items: center;
-  width: 70% !important;
+  width: 65% !important;
   /* height: 80vh; */
-  grid-template-columns: repeat(auto-fit, minmax(13rem, 4fr)) !important;
-  /* margin: 3rem; */
-  grid-gap: 1rem !important;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 4fr)) !important;
+  padding:0 3rem;
+  /* grid-gap: 1rem !important; */
 
 }
 @media only screen and (max-width: 600px) {
@@ -92,12 +92,12 @@ padding:0 2rem !important;
 }
 @media (min-width: 768px){
   .skill-icon{
-    /* border-bottom: 1px solid #5928e5;
-    border-right: 1px solid #5928e5; */
-    margin-right: 2rem;
-    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #5928e5 !important;
+    border-right: 1px solid #5928e5 !important;
+    /* margin-right: 2rem;
+    margin-bottom: 1.5rem; */
 
-    box-shadow: 5px 10px  #443866;
+    /* box-shadow: 5px 10px  #443866; */
   }
   
 }

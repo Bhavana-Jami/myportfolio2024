@@ -1,11 +1,4 @@
-:root {
-  --color-white: #fff;
-  --color-black: #000;
-  --color-accent: #ffd9d9;
-  --color-secondary: #5928e5;
-  --light-slate: #ccd6f6;
-  --slate: #8892b0;
-}
+
 h2 span{
   font-size: 2rem !important;
   font-weight: 900;

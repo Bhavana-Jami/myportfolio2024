@@ -1,65 +1,11 @@
-.overlay {
-  /* position: relative; */
-  height: 10.57rem;
+.about_section {
+  background-color: var(--color-black) !important;
+  color: var(--color-accent) !important;
 }
-
-img {
-  height: 16rem;
-  width: 17rem;
-  object-fit: contain;
-  z-index: 2 !important; /* Bring the image to the front */
-  position: relative;
-  border-radius: 20px;
-  transition: ease-in 5ms;
-}
-.image-container {
-  position: relative;
-}
-#propTwo {
-  position: absolute;
-  height: 15rem;
-  width: 16rem;
-  top: 40%;
-  left: 25%;
-  background: radial-gradient(
-    circle,
-    transparent 14%,
-    #4f46e4 15%,
-    #4f46e4 25%,
-    transparent 26%
-  );
-  background-size: 1em 1em;
-  background-color: none !important;
-
-  opacity: 0.7;
-  transition: ease-in 5ms;
-  z-index: 4 !important;
-}
-img:hover {
-  z-index: 10 !important;
-}
-#propTwo:hover {
-  z-index: -1 !important;
-}
-#propOne {
-  position: absolute;
-  height: 15rem;
-  width: 16rem;
-  top: 16%;
-  left: 8%;
-  transition: ease-in 5ms;
-
-  /* z-index: -1 !important; */
-  background: radial-gradient(circle, #4f46e4 25%, transparent 26%);
-  background-size: 1em 1em;
-  opacity: 1;
-  background-color: none !important;
-}
-
 .about-description {
   text-align: left;
-  color: #ccd6f6;
-  /* margin-left: -3.4rem !important; */
+  color: var(--color-accent) !important;
+  font-size: large;
   letter-spacing: 0.03em !important;
 }
 #about-heading {
@@ -69,24 +15,19 @@ img:hover {
 }
 #about-heading span {
   font-size: 2rem !important;
-
   font-weight: bold !important;
-  /* text-shadow: 0.5px 0.5px 2px #ccd6f6; */
-  color: #5928e5 !important;
+  color: var(--color-secondary) !important;
 }
 .about-description span {
-  color: #5928e5 !important;
+  color: #ffdbdb !important;
 }
-/* new styling */
-/* About.css */
-
 #about-heading {
   font-weight: bold;
   font-size: 1.7rem;
   letter-spacing: 0.04em;
   text-align: center;
   margin-bottom: 2rem;
-  border-bottom: 1px solid var(--color-secondary);
+  border-bottom: 1px solid var(--color-secondary) !important;
 }
 
 #about-heading span {
@@ -94,95 +35,20 @@ img:hover {
   font-weight: bold;
   color: #5928e5;
 }
-
-.image-container {
-  text-align: center;
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-.about-description {
-  text-align: center;
-  color: #ccd6f6;
-  letter-spacing: 0.03em;
-}
-
 .sm-icon-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.6rem;
 }
-
-.sm-icon {
-  background-color: #6937f1;
-  padding: 0.6rem 0.6rem;
-  border-radius: 0.1rem;
+.sm-icon-container a {
+  background-color:var(--color-accent);
+  color: var(--color-secondary);
+  border-radius: 2px;
+  padding: 0.9em;
+  opacity: 0.75;
 }
-
-.sm-icon a {
-  color: #ffdbdb !important;
-  text-decoration: none !important;
-}
-
-@media (max-width: 768px) {
-  .image-container {
-    text-align: center;
-  }
-
-  .about-description {
-    /* font-size: 0.9em; */
-    /* margin-top: 0.7rem !important; */
-    padding-top: 2% !important;
-    padding-left: 10% !important;
-    padding-right: 10% !important;
-    /* padding-bottom: 9% !important; */
-    text-align: center !important;
-  }
-
-  .sm-icon-container {
-    justify-content: center;
-  }
-  #propOne {
-    height: 15rem;
-    width: 16rem;
-    top: 16%;
-    left: 28%; /* Adjust size for smaller screens */
-  }
-}
-@media (min-width: 768px) {
-  #about-heading {
-    margin-bottom: 7rem;
-  }
-}
-@media (max-width: 576px) {
-  #propOne {
-    height: 12rem; /* Adjust size for smaller screens */
-    width: 13rem; /* Adjust size for smaller screens */
-    top: 12%; /* Adjust positioning for smaller screens */
-    left: 27%; /* Adjust positioning for smaller screens */
-  }
-  img {
-    height: 12rem; /* Adjust size for smaller screens */
-    width: 13rem;
-  }
-  .about-description {
-    /* font-size: 0.9em; */
-    /* margin-top: 0.7rem !important; */
-    padding-top: 5% !important;
-    padding-left: 11.5% !important;
-    padding-right: 11.5% !important;
-    /* padding-bottom: 9% !important; */
-  }
-  #about-heading {
-    font-size: 1.5rem;
-  }
-
-  .image-container {
-    margin-bottom: 1rem;
-  }
-
-  .about-description {
-    font-size: 0.9em;
-  }
+.sm-icon-container a:hover{
+  background-color: var(--color-black);
+  transition:  ease-in-out 0.5s;
 }

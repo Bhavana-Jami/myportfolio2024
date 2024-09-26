@@ -29,8 +29,8 @@ function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
       // fixed="top"
       id="navbar"
     >
-      <Container fluid>
-        <Navbar.Brand onClick={() => scrollIntoView(homeRef)} className="align-items-center">
+      <Container fluid >
+        <Navbar.Brand onClick={() => scrollIntoView(homeRef)} >
           JB
         </Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}>
@@ -42,14 +42,14 @@ function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
           placement="end"
         >
           <Offcanvas.Header closeButton closeVariant="white">
-            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+            {/* <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
               JB
-            </Offcanvas.Title>
+            </Offcanvas.Title> */}
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="justify-content-end align-items-center flex-grow-1 pe-2 gap-2">
+            <Nav className="justify-content-end align-items-center flex-grow-1 gap-4 fw-bold">
               <Nav.Link onClick={() => scrollIntoView(skillsRef)}>
-                About
+                Resume
               </Nav.Link>
               <Nav.Link onClick={() => scrollIntoView(skillsRef)}>
                 Skills
@@ -63,7 +63,7 @@ function Header({ expand, aboutRef, homeRef, skillsRef, projectsRef }) {
                 Resume
               </Nav.Link> */}
               <Nav.Link>
-                <BsBrightnessHigh />
+                {/* <BsBrightnessHigh /> */}
                 {/* <BiMoon /> */}
               </Nav.Link>
 

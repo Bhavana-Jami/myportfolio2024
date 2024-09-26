@@ -4,6 +4,8 @@
   --color-black: #000;
   --color-accent: #ffd9d9;
   --color-secondary: #5928e5;
+  --light-slate: #ccd6f6;
+  --slate: #8892b0;
 }
 * {
   margin: 0;
@@ -25,20 +27,20 @@
   padding: 0 !important;
 }
 #app {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth;
   height: 100vh;
-  max-width: 100%;
-  scroll-snap-type: y mandatory;
+  max-width: 100%; */
+  /* scroll-snap-type: y mandatory; */
   background-color: var(--color-black);
   color: var(--color-white) !important;
   
-
+/* 
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: hidden; */
 }
 .section {
   min-height: 100vh ;
-  width: 100%;
+  width: 100% !important;
   scroll-snap-align: start;
 }
 .section-heading{

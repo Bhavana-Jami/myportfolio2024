@@ -7,6 +7,7 @@
   align-items: center !important;
   flex-direction: column !important;
   background-color: #5928e5 !important;
+  gap:0.5rem ;
 }
 
 #projects {

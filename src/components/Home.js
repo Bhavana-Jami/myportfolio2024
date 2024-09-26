@@ -1,13 +1,16 @@
 import React, { forwardRef, useRef } from "react";
 import "../styles/Home.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Stack } from "react-bootstrap";
 import resume from "../assets/bhavanaportfolio2024.pdf"
 // import Nav from "react-bootstrap";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsJustify } from "react-icons/bs";
+import myPic from '../assets/myPic.jpeg';
+import Headroom from 'react-headroom'
 
 import Header from "./Header";
 import { Link } from "react-router-dom";
 import { Nav } from "react-bootstrap";
+import mynewpic from '../assets/mynewpic.png'
 const Home = forwardRef(({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }, ref) => {
 
 
@@ -16,70 +19,54 @@ const Home = forwardRef(({ homeRef, aboutRef, skillsRef, projectsRef, contactRef
       elementRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }
- 
+
   return (
     <Container id="home" ref={ref} >
-     <Header
-        expand="md"
-        homeRef={homeRef}
-        aboutRef={aboutRef}
-        skillsRef={skillsRef}
-        projectsRef={projectsRef}
-        contactRef={contactRef}
-      />
-     
-      {/* <div  id="blobOne"> */}
+      <Headroom style={{
+        'webkitTransition': 'all .5s ease-in-out',
+        'mozTransition': 'all .5s ease-in-out',
+        'oTransition': 'all .5s ease-in-out',
+        'transition': 'all .5s ease-in-out',
+      }}>
+        <Header
+          expand="md"
+          homeRef={homeRef}
+          aboutRef={aboutRef}
+          skillsRef={skillsRef}
+          projectsRef={projectsRef}
+          contactRef={contactRef}
+        />
+      </Headroom>
+      <div className="checked_background" ></div>
+      <div className="solid_background"></div>
+      <div className="hero_section">
+        <div className="hero_description">
+          <Row id="hi">Hi, I am</Row>
+          <Row id="name">Bhavana Jami.</Row>
+          <Row className="tagline">
+            I love to create, develop.
+          </Row>
+          <Row id="knowmore">
+            <Col id="resume" >
+              <a style={{ textDecoration: "none", color: "inherit" }} href={resume} target="_blank" rel="noopener noreferrer">
+                Contact
+              </a>
+            </Col>
+            <Col id="hireMe" >
+              <Nav.Link onClick={() => scrollIntoView(contactRef)}>
+                Know More &nbsp; &nbsp; <BsArrowRight />
+              </Nav.Link>
+            </Col>
+          </Row>
+        </div>
+        <div className="hero_image">
 
-        {/* <marquee id="marqueeOne" scrollamount="6.5" >
-          I use google to center a div, lol
-        </marquee>
-        <marquee id="marqueeTwo" scrollamount="6">
-          Wanna be girl dev.
-        </marquee>
-        <marquee id="marqueeThree" scrollamount="7.5">
-          Waiting for that ONE chance.
-        </marquee>
-        <marquee id="marqueeFour" scrollamount="7">
-          Wanna be girl dev.
-        </marquee>
-        <marquee id="marqueeFive" scrollamount="6">
-          Wanna be girl dev.
-        </marquee> 
-        <marquee id="marqueeSix" scrollamount="7.5">
-          Wanna be girl dev.
-        </marquee>*/}
-        {/* <marquee id="marqueeSeven" scrollamount="6.5" >
-          I use google to center a div, lol
-        </marquee>
-        <marquee id="marqueeEight" scrollamount="6">
-          Wanna be girl dev.
-        </marquee> */}
-
-      {/* </div> */}
-      {/* <div id="blobTwo"></div> */}
-      <Row id="hi" >Hi, I am</Row>
-      <Row id="name" >Bhavana Jami.</Row>
-      <Row id="tagline">
-        I love to create, develop.
-
-      </Row>
-      {/* <Row id="description">I am currently working in TCS as Associate Software Developer.</Row> */}
-      <Row id="knowmore" className="" >
-        <Col id="resume" xs={7} md={3}>
-          <a style={{ textDecoration: "none", color: "none" }} href={resume} target="_blank" rel="noopener noreferrer">
-            Resume
-          </a>
-        </Col>
-
-        <Col id="hireMe" xs={7} md={5}>
-
-          <Nav.Link onClick={() => scrollIntoView(contactRef)}>
-            Contact &nbsp; &nbsp;
-            <BsArrowRight />
-          </Nav.Link></Col>
-      </Row>
-      {/* </div> */}
-
+      
+         
+          
+          <img src={mynewpic} className="my_image" alt="My Picture" />
+        </div>
+      </div>
     </Container>
   );
 });
