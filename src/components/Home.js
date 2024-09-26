@@ -48,12 +48,15 @@ const Home = forwardRef(({ homeRef, aboutRef, skillsRef, projectsRef, contactRef
           </Row>
           <Row id="knowmore">
             <Col id="resume" >
-              <a style={{ textDecoration: "none", color: "inherit" }} href={resume} target="_blank" rel="noopener noreferrer">
+              {/* <a style={{ textDecoration: "none", color: "inherit" }} href={resume} target="_blank" rel="noopener noreferrer">
                 Contact
-              </a>
+              </a> */}
+              <Nav.Link onClick={() => scrollIntoView(contactRef)}>
+                Skills
+              </Nav.Link>
             </Col>
             <Col id="hireMe" >
-              <Nav.Link onClick={() => scrollIntoView(contactRef)}>
+              <Nav.Link onClick={() => scrollIntoView(aboutRef)}>
                 Know More &nbsp; &nbsp; <BsArrowRight />
               </Nav.Link>
             </Col>

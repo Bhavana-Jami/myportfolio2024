@@ -50,7 +50,7 @@
   width: 50%;
   z-index: 0 !important;
   background-color: #5928e5;
-  opacity: 0.6;
+  opacity: 0.46;
 }
 
 .hero_section {
@@ -95,22 +95,23 @@
   font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   text-align: left !important;
-  font-size: 4.4rem;
+  font-size: clamp(2.9rem, 2.42rem + 2.56vw, 4.5rem);
   font-weight: bolder;
-  color: var(--light-slate) !important;
-  z-index: 10 !important;
+  color: #ffd9d9  !important;
+  /* position: absolute; */
+  z-index: 1000 !important;
   text-shadow: 4px 4px 10px rgba(1, 0, 2, 0.59);
   word-break: break-all !important;
   word-wrap: break-word !important;
-  margin-left: -px;
+  /* margin-left: -px; */
 }
 
 .tagline {
-  font-size: 2.6vw;
+  font-size: clamp(1.7rem, 1.55rem + 0.8vw, 2.2rem);
   font-weight: 600;
   margin-top: -1.2%;
   letter-spacing: 0.3px;
-  color: #ffd9d9 !important;
+  color:var(--light-slate) !important;
   z-index: 1;
   text-shadow: 5px 5px 10px rgba(10, 1, 37, 0.59);
 }
@@ -235,9 +236,7 @@
     
     margin-right: 0 !important;
   }
-  #name{
-    font-size: 3.3rem;
-  }
+ 
   #hi{
     font-size: 1rem;
   }
@@ -271,26 +270,31 @@
     padding: 1rem 1.5rem;
     font-size: 1rem;
   }
-  .tagline{
-    font-size: 1.7rem !important;
-  }
+ 
   .hero_description{
     margin-top: 1.3rem;
+  }
+  .my_image {
+ 
+    height: 200px;
+    width: 180px;
+  /* border-bottom-left-radius: 10px !important; */
+  border-top-left-radius: 10px !important;
+  border-bottom-right-radius: 50% !important;
+
+
+
+
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
-  .my_image {
-    height: 200px;
-    width: 180px;
-  }
+ 
   .hero_description{
     margin-right: 2.3rem;
   }
-  #name {
-    font-size: 3rem;
-  }
+ 
   #hi{
 
   }
@@ -309,12 +313,7 @@
   .my_image {
     height: 200px;
   }
-  #name {
-    font-size: 3rem;
-  }
-  #tagline {
-    font-size: 1rem;
-  }
+
   #resume,
   #hireMe {
     margin-top: 0.5rem;
