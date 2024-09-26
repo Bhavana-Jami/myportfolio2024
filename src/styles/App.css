@@ -27,10 +27,10 @@
   padding: 0 !important;
 }
 #app {
-  /* scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   height: 100vh;
-  max-width: 100%; */
-  /* scroll-snap-type: y mandatory; */
+  max-width: 100%;
+  scroll-snap-type: y mandatory !important;
   background-color: var(--color-black);
   color: var(--color-white) !important;
   
@@ -39,9 +39,9 @@
   overflow-x: hidden; */
 }
 .section {
-  min-height: 100vh ;
+  height: 100vh ;
   width: 100% !important;
-  scroll-snap-align: start;
+  scroll-snap-align: start !important;
 }
 .section-heading{
   /* margin-top: -5%; */

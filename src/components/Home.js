@@ -6,7 +6,7 @@ import resume from "../assets/bhavanaportfolio2024.pdf"
 import { BsArrowRight, BsJustify } from "react-icons/bs";
 import myPic from '../assets/myPic.jpeg';
 import Headroom from 'react-headroom'
-
+import '../styles/App.css'
 import Header from "./Header";
 import { Link } from "react-router-dom";
 import { Nav } from "react-bootstrap";
@@ -21,7 +21,7 @@ const Home = forwardRef(({ homeRef, aboutRef, skillsRef, projectsRef, contactRef
   }
 
   return (
-    <Container id="home" ref={ref} >
+    <Container id="home" ref={ref} className="section">
       <Headroom style={{
         'webkitTransition': 'all .5s ease-in-out',
         'mozTransition': 'all .5s ease-in-out',
@@ -48,16 +48,16 @@ const Home = forwardRef(({ homeRef, aboutRef, skillsRef, projectsRef, contactRef
           </Row>
           <Row id="knowmore">
             <Col id="resume" >
-              {/* <a style={{ textDecoration: "none", color: "inherit" }} href={resume} target="_blank" rel="noopener noreferrer">
-                Contact
-              </a> */}
-              <Nav.Link onClick={() => scrollIntoView(contactRef)}>
-                Skills
-              </Nav.Link>
+              <a style={{ textDecoration: "none", color: "inherit" }} href={resume} target="_blank" rel="noopener noreferrer">
+                Resume
+              </a>
+              {/* <Nav.Link onClick={() => scrollIntoView(contactRef)}>
+                Resume
+              </Nav.Link> */}
             </Col>
             <Col id="hireMe" >
               <Nav.Link onClick={() => scrollIntoView(aboutRef)}>
-                Know More &nbsp; &nbsp; <BsArrowRight />
+                Contact &nbsp; &nbsp; <BsArrowRight />
               </Nav.Link>
             </Col>
           </Row>

@@ -197,7 +197,7 @@
 
 #resume {
   border: 1px solid var(--color-secondary);
-  padding: 1rem 2rem;
+  padding: 1rem 2rem !important;
   margin-top: 2rem;
   transition: ease-in 0.5s;
   cursor: pointer;
@@ -241,18 +241,19 @@
     font-size: 1rem;
   }
   .checked_background{
-    height: 100vh;
-    /* top: 0;
-    left: 0; */
+    height: 50vh;
+    top: 50%;
+    left: 0;
     width: 100%;
     /* z-index: ; */
   }
   .solid_background{
-    /* height: 50vh;
+    height: 50vh;
     width: 100%;
-    top:50%;
-    left:0; */
-    display: none;
+    top:0%;
+    left:0;
+    /* display: none; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    
   }
   #knowmore{
@@ -281,7 +282,8 @@
   /* border-bottom-left-radius: 10px !important; */
   border-top-left-radius: 10px !important;
   border-bottom-right-radius: 50% !important;
-
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
 

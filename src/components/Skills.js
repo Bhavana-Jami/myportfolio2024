@@ -24,7 +24,7 @@ const Skills = forwardRef((props, ref) => {
           <FaReact className="skill-icon" /> */}
         {
           skills.map(skill => <div className="skill-icon" onClick={plusClickHandler}>
-            <span id="plus_icon" >{showPlus ? "+" : "-"}</span>
+            {/* <span id="plus_icon" >{showPlus ? "+" : "-"}</span> */}
             
               
               <span >{setShowPlus&&skill}</span>
