@@ -10,6 +10,24 @@
   --slate: #8892b0;
   --light-slate: #ccd6f6;
 }
+.grid_background {
+  /* position: absolute; */
+  /* top: 11vh;
+  left: 0; */
+  /* width: 100%;
+  height: 100%; */
+  background-color: black;
+  background-image: 
+    radial-gradient(circle at center, transparent 60%, rgba(0, 0, 0, 0.8)),
+    linear-gradient(transparent, transparent),
+    linear-gradient(transparent, transparent),
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    /* linear-gradient(to right, #5928e5 1px, transparent 1px), 
+    linear-gradient(to bottom, #5928e5 1px, transparent 1px); */
+  background-size: 100% 100%, 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+  z-index: 1;
+}
 
 .container {
   max-width: 100% !important;
@@ -224,9 +242,16 @@
 /* media queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  #name{
+    font-size: 2.6rem;
+  }
+  .tagline{
+    font-size: 1.3rem;
+  }
   .hero_section {
     flex-direction: column-reverse;
     z-index: 100;
+    padding: 0 1rem;
   }
   .hero_description{
     display: flex;
@@ -277,10 +302,10 @@
   }
   .my_image {
  
-    height: 200px;
-    width: 180px;
-  /* border-bottom-left-radius: 10px !important; */
+    height: 140px;
+    width: 130px;
   border-top-left-radius: 10px !important;
+  /* border-top-left-radius: 50% !important; */
   border-bottom-right-radius: 50% !important;
   
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -288,6 +313,7 @@
 
 
   }
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -322,6 +348,7 @@
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
+  
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

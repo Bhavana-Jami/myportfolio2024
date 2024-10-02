@@ -8,24 +8,26 @@
   --light-slate: #ccd6f6;
 }
 #navbar {
+  margin: 1rem 0rem;
   height: 11vh !important;
   width: 100% !important;
   scroll-snap-stop: always !important;
   scroll-snap-align: start !important;
   backdrop-filter: blur(19px) saturate(105%) !important; 
   -webkit-backdrop-filter: blur(19px) saturate(105%) !important;
-  /* background-blend-mode:luminosity; */
-  /* z-index: 100 !important;  */
-  /* position: absolute;  */
+  /* position: absolute; */
+/* top: 0; */
+  
+  z-index: 1000 !important; /* Keeps the navbar above other elements */
 
   
 }
 .navbar-toggle-icon span {
   border: none;
-  color: white !important;
+  color: #ffdbdb !important;
 }
 .navbar-toggler {
-  color: #ccd6f6 !important;
+  color: #ffdbdb !important;
   font-size: 2rem !important;
   padding-right: 10% !important;
 }
@@ -52,13 +54,14 @@
 .navbar a {
   font-size: clamp(13px, 3.5vw, 18px);
   /* font-weight: bold !important; */
-  color: var(--light-slate) !important;
+  color: #ffdbdb !important;
   text-shadow: 1px 1px 100px rgba(69, 43, 149, 0.59);
   
 }
 .navbar a:hover {
   color: #5928e5 !important;
-  /* font-weight: bold !important; */
+  font-weight: bolder !important;
+  border-bottom: #ffdbdb 0.6px solid;
 }
 .offcanvas.offcanvas-end {
   width: 80% !important;

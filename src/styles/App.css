@@ -30,8 +30,8 @@
   scroll-behavior: smooth !important;
   height: 100vh;
   max-width: 100%;
-  scroll-snap-type: y mandatory !important;
-  background-color: var(--color-black);
+  /* scroll-snap-type: y mandatory !important; */
+  /* background-color: var(--color-black); */
   color: var(--color-white) !important;
   
 /* 

@@ -8,10 +8,13 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "@gsap/react": "^2.1.1",
     "@studio-freight/lenis": "^1.0.42",
+    "@tabler/icons-react": "^3.19.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.9.0",
     "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
@@ -22,6 +25,7 @@
     "react-router-dom": "^6.8.1",
     "react-scripts": "^5.0.1",
     "split-type": "^0.3.4",
+    "tailwind-merge": "^2.5.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

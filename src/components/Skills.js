@@ -17,11 +17,19 @@ const Skills = forwardRef((props, ref) => {
   }
   const skills = ["<>HTML</>", ".CSS", "<script/>", "ReactJS()", "BootStrap", "git.init", "Bootstrap", "Random"]
   return (
-    <div ref={ref} className="section" id="skills-container">
+    <div ref={ref} className="section bg-animation" id="skills-container">
+        {/* <div class="" style={{position:"absolute", top:"0", left:"0", height:"100vh"}}> */}
+        {/* <>
+					<div id='stars'></div>
+					<div id='stars2'></div>
+					<div id='stars3'></div>
+					<div id='stars4'></div></> */}
+				{/* </div> */}
       <div className="section-heading" id="tech-heading">You can <span>count me on</span> these ..</div>
       <div className="icons">
         {/* <FaBootstrap className="skill-icon" />
           <FaReact className="skill-icon" /> */}
+          
         {
           skills.map(skill => <div className="skill-icon" onClick={plusClickHandler}>
             {/* <span id="plus_icon" >{showPlus ? "+" : "-"}</span> */}
@@ -31,6 +39,7 @@ const Skills = forwardRef((props, ref) => {
             <p>Some text should be here, it is a must.</p>
           </div>)
         }
+        
 
       </div>
     </div>

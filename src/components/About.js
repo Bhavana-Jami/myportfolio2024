@@ -20,7 +20,7 @@ const About = forwardRef((props, ref) => {
         color: "#fff" // Initial color (colorless)
       },
       {
-        color: "#5928e5", // Change to purple on scroll down
+        color: "black", // Change to purple on scroll down
         stagger: 0.1, // Stagger effect between words
         scrollTrigger: {
           trigger: paragraphRef.current, // Element to trigger the scroll animation

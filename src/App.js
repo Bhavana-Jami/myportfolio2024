@@ -13,6 +13,7 @@ import Header from "./components/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./components/Contact";
 import RevealText from "./components/RevealText";
+import Background from "./components/Background";
 
 function App() {
   const homeRef = useRef(null);
@@ -21,9 +22,8 @@ function App() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null)
   return (
-    <Container id="app">
-     
-      <Home
+<Container id="app">
+<Home
         homeRef={homeRef}
         aboutRef={aboutRef}
         skillsRef={skillsRef}
@@ -34,16 +34,10 @@ function App() {
       <Skills ref={skillsRef} />
       <Projects ref={projectsRef} />
       <Contact ref={contactRef} />
-    </Container>
-    // <div style={{ height: '200vh', padding: '50px' }}>
-    //   <h1>Scroll down to reveal text</h1>
-    //   <div style={{ marginTop: '100vh' }}>
-    //     <RevealText>
-    //       <h2>This text will reveal on scroll! </h2>
-    //       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    //     </RevealText>
-    //   </div>
-    // </div>
+</Container>
+   
+
+
   );
 }
 
