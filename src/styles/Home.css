@@ -1,15 +1,3 @@
-* {
-  box-sizing: border-box !important;
-}
-
-:root {
-  --color-white: #fff;
-  --color-black: #000;
-  --color-accent: #ffd9d9;
-  --color-secondary: #5928e5;
-  --slate: #8892b0;
-  --light-slate: #ccd6f6;
-}
 .grid_background {
   /* position: absolute; */
   /* top: 11vh;
@@ -115,7 +103,7 @@
   text-align: left !important;
   font-size: clamp(2.9rem, 2.42rem + 2.56vw, 4.5rem);
   font-weight: bolder;
-  color: #ffd9d9  !important;
+  color: var(--color-accent-two)  !important;
   /* position: absolute; */
   z-index: 1000 !important;
   text-shadow: 4px 4px 10px rgba(1, 0, 2, 0.59);

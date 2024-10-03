@@ -2,6 +2,7 @@ import "./styles/App.css";
 import React, { useRef } from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/About";
+
 import Projects from "./components/Projects";
 import Home from "./components/Home";
 import { Container } from "react-bootstrap";
@@ -14,6 +15,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./components/Contact";
 import RevealText from "./components/RevealText";
 import Background from "./components/Background";
+import ProjectsArchive from "./components/ProjectsArchive";
 
 function App() {
   const homeRef = useRef(null);
@@ -22,8 +24,9 @@ function App() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null)
   return (
-<Container id="app">
-<Home
+    // <Router>
+    <Container id="app">
+      <Home
         homeRef={homeRef}
         aboutRef={aboutRef}
         skillsRef={skillsRef}
@@ -34,8 +37,14 @@ function App() {
       <Skills ref={skillsRef} />
       <Projects ref={projectsRef} />
       <Contact ref={contactRef} />
-</Container>
+     
+        {/* <Routes>
+          <Route path="/projects-archive" element={<ProjectsArchive />} />
+        </Routes> */}
+         {/* </Router> */}
+    </Container>
    
+
 
 
   );

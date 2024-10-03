@@ -1,72 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-:root {
-  --color-white: #fff;
-  --color-black: #000;
-  --color-accent: #ffd9d9;
-  --color-secondary: #5928e5;
-  --light-slate: #ccd6f6;
-  --slate: #8892b0;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
-    system-ui, sans-serif;
-  font-family: "Montserrat", sans-serif;
- 
-
-}
 .container {
   --bs-gutter-x: 0 !important;
   --bs-gutter-y: 0 !important;
 }
-.container-fluid{
+
+.container-fluid {
   --bs-gutter-x: 1.5rem !important;
   margin: 0% !important;
   padding: 0 !important;
 }
+
 #app {
+  color: var(--color-white) !important;
   scroll-behavior: smooth !important;
   height: 100vh;
   max-width: 100%;
-  /* scroll-snap-type: y mandatory !important; */
-  /* background-color: var(--color-black); */
-  color: var(--color-white) !important;
-  
-/* 
+  scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  overflow-x: hidden; */
+  overflow-x: hidden;
 }
+
 .section {
-  height: 100vh ;
-  width: 100% !important;
-  scroll-snap-align: start !important;
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
 }
-.section-heading{
-  /* margin-top: -5%; */
-  font-size: clamp(1rem, 0.6667rem + 1.7778vw, 2rem);
-  letter-spacing: 0.5px;
-}
-.section:first-child(){
-  background-color: yellow !important;
-}
-/* width */
+
 ::-webkit-scrollbar {
   width: 0px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  /* background: #f1f1f1; */
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  /* background: #888; */
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  /* background: #555; */
 }
