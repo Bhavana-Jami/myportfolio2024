@@ -1,7 +1,6 @@
 #projects-container {
-  height: 100vh !important;
+  /* height: 100vh !important; */
   display: flex !important;
-  overflow-y: hidden;
   justify-content: center !important;
   align-items: center !important;
   flex-direction: column !important;
