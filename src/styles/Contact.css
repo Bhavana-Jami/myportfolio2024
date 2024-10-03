@@ -19,7 +19,6 @@ h2 span{
   opacity: 0.9;
   background-color: #5928e5;
   letter-spacing: 2px;
-  /* border-bottom: 1px solid #ccd6f6; */
 
 }
 .form-control {
@@ -46,11 +45,7 @@ h2 span{
   color: var(--color-secondary) !important;
   transition: color 0.1s ease-in-out !important;
 }
-/* 
-.form-control:focus + .form-label,
-.form-control:focus ~ .form-label {
-  color: var(--color-secondary) !important;
-} */
+
 
 .available_to_work{
   display: flex;

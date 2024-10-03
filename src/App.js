@@ -24,7 +24,7 @@ function App() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null)
   return (
-    // <Router>
+
     <Container id="app">
       <Home
         homeRef={homeRef}
@@ -37,13 +37,10 @@ function App() {
       <Skills ref={skillsRef} />
       <Projects ref={projectsRef} />
       <Contact ref={contactRef} />
-     
-        {/* <Routes>
-          <Route path="/projects-archive" element={<ProjectsArchive />} />
-        </Routes> */}
-         {/* </Router> */}
+
+
     </Container>
-   
+
 
 
 
