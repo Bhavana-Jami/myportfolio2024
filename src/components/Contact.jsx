@@ -5,8 +5,9 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import Footer from "./Footer";
 import "../styles/Contact.css";
 import emailjs from "@emailjs/browser";
-import { BiArrowToRight } from "react-icons/bi";
+import { BiArrowToRight, BiRocket } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
+import { DiEnvato } from "react-icons/di";
 
 const Contact = forwardRef((props, ref) => {
   const homeRef = useRef(null);
@@ -41,14 +42,14 @@ const Contact = forwardRef((props, ref) => {
     <Container
       ref={ref}
       className="section d-flex justify-content-center align-items-center flex-column p-5"
+      id="contact-container"
     >
       <div style={{ maxWidth: "300px" }}>
         <Row className="mb-2 mt-2 text-center">
-           {/* <div className="available_to_work">
-          <span className="dot">●</span>
-          <span className="text">
-            Available to wonk</span>
-          </div> */}
+          <div className="available_to_work">
+            <span className="dot">●</span>
+            <span className="text">Available to wonk</span>
+          </div>
           <h2
             style={{
               fontWeight: "900",
@@ -58,15 +59,7 @@ const Contact = forwardRef((props, ref) => {
           >
             Let's connect !
           </h2>
-
         </Row>
-        {/* <Row className="mb-3 text-center">
-          <h5
-            style={{ color: "#ccd6f6", opacity: "0.7", letterSpacing: "1.3px",textAlign:"center" , fontSize:"0.8rem"}}
-          >
-            Thoughts of hiring me, or just wanna say hello? Let's connect!
-          </h5>
-        </Row> */}
       </div>
       <Form ref={form} onSubmit={sendEmail} className="w-100 w-md-75 pt-4">
         <Row className="mb-5 justify-content-center">
@@ -132,8 +125,14 @@ const Contact = forwardRef((props, ref) => {
             {/* </Button> */}
           </Col>
         </Row>
+        <Row className="footer">
+        <span>
+          Bhavana Jami @ 2024</span>
+          <span>
+            <BiRocket />
+          </span>
+        </Row>
       </Form>
-      {/* <Footer homeRef={homeRef} /> */}
     </Container>
   );
 });

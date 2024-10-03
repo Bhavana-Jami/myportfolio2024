@@ -1,5 +1,5 @@
 #projects-container {
-  min-height: auto !important;
+  height: 100vh !important;
   display: flex !important;
   overflow-y: hidden;
   justify-content: center !important;
