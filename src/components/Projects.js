@@ -12,9 +12,9 @@ import p3 from '../assets/ss.png'
 
 const Projects = forwardRef((props, ref) => {
   const [modalShow, setModalShow] = React.useState(false);
-  const projects = [{ id: 1, name: "Portfolio", techstack: "ReactJs ReactBootstrap CSS", description: "This is my portfolio website where I tried  is my portfolio website where I tried  is my portfolio website where I tried  is my portfolio website where I tried to showcase my web developement skills in the aspects of design and dvelopment", github: "git", demo: "demo" },
-  { id: 2, name: "Trigli", techstack: "ReactJs ReactBootstrap CSS", description: "Trigli resembles a note taking app except it is specifically developed for the users to journal about their triggers and glimmers", github: "trigligit", demo: "triglidemo" },
-  { id: 3, name: "BlueWonk", techstack: "ReactJs React Bootstrap", description: "Blue Wonk is my personal blog where I share various things I am personally interested in.", github: "", demo: "" },
+  const projects = [{ id: 1, name: "Portfolio", techstack: "ReactJs • ReactBootstrap • CSS", description: "This is my portfolio website where I tried  is my portfolio website where I tried  is my portfolio website where I tried  is my portfolio website where I tried to showcase my web developement skills in the aspects of design and dvelopment", github: "git", demo: "demo" },
+  { id: 2, name: "Trigli", techstack: "ReactJs • ReactBootstrap • CSS", description: "Trigli resembles a note taking app except it is specifically developed for the users to journal about their triggers and glimmers", github: "trigligit", demo: "triglidemo" },
+  { id: 3, name: "BlueWonk", techstack: "ReactJs • React • Bootstrap", description: "Blue Wonk is my personal blog where I share various things I am personally interested in.", github: "", demo: "" },
     // { id: 4, name: "Bcommerce", techstack: "NA", description: "Coming Soon", github: "NA", demo: "NA" }
   ]
   const [selectedProject, setSelectedProject] = useState(null)
@@ -77,7 +77,7 @@ const Projects = forwardRef((props, ref) => {
                 <div>
                   <h3>{project.name}</h3></div>
                 <div className="techstack">
-                  {project.techstack}</div>
+                 <span> {project.techstack}</span></div>
 
                 <div className="project-toolbar">
                   <span>View</span>
