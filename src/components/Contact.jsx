@@ -45,16 +45,17 @@ const Contact = forwardRef((props, ref) => {
       id="contact-container"
     >
       <div style={{ maxWidth: "300px" }}>
-        <Row className="mb-2 mt-2 text-center">
+        <Row className="mb-2 mt-2 text-center justify-content-center align-items-center">
           <div className="available_to_work">
             <span className="dot">●</span>
-            <span className="text">Available to wonk</span>
+            <span className="text">Available to work</span>
           </div>
           <h2
             style={{
               fontWeight: "900",
-              color: "#ccd6f6",
+              color: "#EEA1BE",
               letterSpacing: "2px",
+              marginBottom:"2rem"
             }}
           >
             Let's connect !

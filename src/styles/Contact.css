@@ -52,7 +52,19 @@ h2 span{
   color: var(--color-secondary) !important;
 } */
 
-
+.available_to_work{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 0.6px solid chartreuse;
+  padding: 0.5rem 0.2rem;
+  width: 50% !important;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  color: chartreuse;
+  margin-bottom: 1rem;
+}
 .form-label {
   font-size: smaller !important;
   letter-spacing: 1.1px !important;

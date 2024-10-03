@@ -105,7 +105,7 @@ const Home = forwardRef(({ homeRef, aboutRef, skillsRef, projectsRef, contactRef
             </Col>
             <Col id="hireMe" >
               <Nav.Link onClick={() => scrollIntoView(aboutRef)}>
-                Connect<BsArrowRight />
+                Contact &nbsp;&nbsp;<BsArrowRight />
               </Nav.Link>
             </Col>
           </Row>

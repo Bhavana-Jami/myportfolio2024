@@ -39,9 +39,9 @@ h1 {
   color: black !important;
 }
 
-.row>* {
+/* .row>* {
   padding: 0% !important;
-}
+} */
 
 .about-description span {
   color: #ffdbdb !important;
