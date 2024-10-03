@@ -125,13 +125,13 @@ const Contact = forwardRef((props, ref) => {
             {/* </Button> */}
           </Col>
         </Row>
-        <Row className="footer">
+        {/* <Row className="footer">
         <span>
           Bhavana Jami @ 2024</span>
           <span>
             <BiRocket />
           </span>
-        </Row>
+        </Row> */}
       </Form>
     </Container>
   );

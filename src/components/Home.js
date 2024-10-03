@@ -67,12 +67,12 @@ const Home = forwardRef(({ homeRef, aboutRef, skillsRef, projectsRef, contactRef
           zIndex: -1
         }}
       />
-      <Headroom style={{
+      {/* <Headroom style={{
         'webkitTransition': 'all .5s ease-in-out',
         'mozTransition': 'all .5s ease-in-out',
         'oTransition': 'all .5s ease-in-out',
         'transition': 'all .5s ease-in-out',
-      }}>
+      }}> */}
         <Header
           expand="md"
           homeRef={homeRef}
@@ -81,7 +81,7 @@ const Home = forwardRef(({ homeRef, aboutRef, skillsRef, projectsRef, contactRef
           projectsRef={projectsRef}
           contactRef={contactRef}
         />
-      </Headroom>
+      {/* </Headroom> */}
       {/* {beams.map((beam, index) => (
         <FallingBeam key={beam} delay={index * 100} />
       ))} */}

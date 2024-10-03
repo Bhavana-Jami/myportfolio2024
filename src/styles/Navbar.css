@@ -37,6 +37,7 @@
   --bs-navbar-toggler-focus-width: 0 !important;
 }
 .navbar-brand {
+  z-index: 1000 !important;
   font-family: "Moirai One", system-ui;
   /* font-size: clamp(1.8rem, 0.9167rem + 0.7778vw, 1.5rem) !important; */
   font-size: 2rem !important;
@@ -70,6 +71,7 @@
   background-color: #5928e5 !important;
   color: var(--color-white) !important;
   backdrop-filter: blur(80px);
+  
 }
 .btn-close {
   color: var(--color-white) !important;
